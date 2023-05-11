@@ -59,7 +59,7 @@ CREATE TABLE bookings (
     numGuests integer NOT NULL,
     FOREIGN KEY (userId) REFERENCES users(id),
     FOREIGN KEY (listingId) REFERENCES listings(id)
-)
+);
 
 CREATE TABLE amenity_types(
     id serial PRIMARY KEY,
