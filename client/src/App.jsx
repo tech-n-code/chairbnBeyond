@@ -14,8 +14,8 @@ function App() {
 
       <div className="titlebar">Property Title</div>
       <div className="gallery">Gallery Component</div>
-      <div>
-        <div>
+      <div className="columnsContainer">
+        <div className="leftColumn">
           <div className="overview">Property Overview Component</div>
           <div className="chaircover">
             <div className="chaircoverLogo">
@@ -32,7 +32,9 @@ function App() {
           <div className="amenities">Amenities Component</div>
           <div className="calendar">Calendar Component</div>
         </div>
-        <div className="reservation">Reservation Component</div>
+        <div className="rightColumn">
+          <div className="reservation">Reservation Component</div>
+        </div>
       </div>
       <div className="reviews">Reviews Component</div>
       <div className="map">Map Component</div>
