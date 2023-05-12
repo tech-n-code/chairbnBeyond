@@ -39,7 +39,7 @@ function App() {
       </div>
       <div className="reviews">Reviews Component</div>
       <div className="map">Map Component</div>
-      <ThingsToKnow />
+      <ThingsToKnow className="things" />
       <div className="footer">Footer</div>
     </>
   );
