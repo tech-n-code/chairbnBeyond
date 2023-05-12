@@ -158,13 +158,36 @@ button:focus-visible {
 .chaircover {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
   margin: 0 auto;
   width: 100%;
   max-width: 1280px;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
+  color: #222222;
+}
+
+.pink {
+  color: rgb(255, 56, 92);
+}
+
+.chaircoverLogo {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #222222;
+  font-weight: 600;
+}
+.chaircoverDescription {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .host {
