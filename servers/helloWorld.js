@@ -1,11 +1,11 @@
-const express = require('express')
-const app = express()
-const PORT = process.env.PORT || 3000;
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 3001;
 
-app.get('/api/test', (req, res) => {
-res.json('Hello World!')
-})
+app.get("/api/test", (req, res) => {
+  res.json("Hello World!");
+});
 
 app.listen(PORT, () => {
-console.log('Server is listening on port 3000...')
-})
+  console.log("Server is listening on port 3001...");
+});
