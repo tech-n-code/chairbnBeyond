@@ -17,7 +17,16 @@ function App() {
       <div>
         <div>
           <div className="overview">Property Overview Component</div>
-          <div className="chaircover">Chaircover</div>
+          <div className="chaircover">
+            <div className="chaircoverLogo">
+              <span className="pink">chair</span>cover
+            </div>
+            <div className="chaircoverDescription">
+              Every booking includes free protection from Chair cancellations,
+              sitting inaccuracies, and other issues like trouble sitting in.
+            </div>
+            <a>Learn More</a>
+          </div>
           <div className="host">Host Component</div>
           <div className="about">About this place Component</div>
           <div className="amenities">Amenities Component</div>
