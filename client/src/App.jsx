@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./index.css";
+import AboutThisPlace from "./components/aboutThisPlace";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,7 +29,8 @@ function App() {
             <a>Learn More</a>
           </div>
           <div className="host">Host Component</div>
-          <div className="about">About this place Component</div>
+          <AboutThisPlace />
+          {/* <div className="about">About this place Component</div> */}
           <div className="amenities">Amenities Component</div>
           <div className="calendar">Calendar Component</div>
         </div>
