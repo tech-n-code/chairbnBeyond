@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import Amenities from "./components/amenities/amenities";
 import "./index.css";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <div className="chaircover">Chaircover</div>
           <div className="host">Host Component</div>
           <div className="about">About this place Component</div>
-          <div className="amenities">Amenities Component</div>
+          <Amenities />
           <div className="calendar">Calendar Component</div>
         </div>
         <div className="reservation">Reservation Component</div>
