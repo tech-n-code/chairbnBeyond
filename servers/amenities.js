@@ -1,6 +1,7 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3002;
@@ -10,6 +11,7 @@ const db = new Client({ connectionString: process.env.DATABASE });
 db.connect();
 
 //Middleware
+app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 
