@@ -7,7 +7,7 @@ function Amenities() {
       .then((res) => res.json())
       .then((data) => setAmenities(data));
   }, []);
-  return <div className="amenities">Amenities</div>;
+  return <div className="amenities">Amenitie</div>;
 }
 
 export default Amenities;
