@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import Amenities from "./components/amenities/amenities";
 import "./index.css";
 import AboutThisPlace from "./components/aboutThisPlace";
 
@@ -29,9 +30,11 @@ function App() {
             <a>Learn More</a>
           </div>
           <div className="host">Host Component</div>
+          <Amenities />
           <AboutThisPlace />
-          {/* <div className="about">About this place Component</div> */}
-          <div className="amenities">Amenities Component</div>
+
+
+
           <div className="calendar">Calendar Component</div>
         </div>
         <div className="rightColumn">
