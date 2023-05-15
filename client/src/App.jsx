@@ -1,9 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Amenities from "./components/amenities/amenities";
 import "./index.css";
 import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
+import ChairCover from "./components/ChairCover/ChairCover.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,28 +12,15 @@ function App() {
       <header className="header">
         <div className="navbar">NavBar Component</div>
       </header>
-
       <div className="titlebar">Property Title</div>
       <div className="gallery">Gallery Component</div>
       <div className="columnsContainer">
         <div className="leftColumn">
           <div className="overview">Property Overview Component</div>
-          <div className="chaircover">
-            <div className="chaircoverLogo">
-              <span className="pink">chair</span>cover
-            </div>
-            <div className="chaircoverDescription">
-              Every booking includes free protection from Chair cancellations,
-              sitting inaccuracies, and other issues like trouble sitting in.
-            </div>
-            <a>Learn More</a>
-          </div>
+          <ChairCover />
           <div className="host">Host Component</div>
-          <Amenities />
           <AboutThisPlace />
-
-
-
+          <Amenities />
           <div className="calendar">Calendar Component</div>
         </div>
         <div className="rightColumn">
