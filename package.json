@@ -8,6 +8,8 @@
     "concurrently": "^8.0.1"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.15.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3"
   }
 }

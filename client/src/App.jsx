@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./index.css";
+import Map from "./components/amenities/Map/Map.jsx"
 
 function App() {
   const [count, setCount] = useState(0);
@@ -37,7 +38,7 @@ function App() {
         </div>
       </div>
       <div className="reviews">Reviews Component</div>
-      <div className="map">Map Component</div>
+      <div className="map">Map Component <Map/></div>
       <div className="things">Things to know</div>
       <div className="footer">Footer</div>
     </>

@@ -1,9 +1,11 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 3003;
+app.use(cors());
+const PORT = process.env.PORT || 3004;
 const { Pool } = require("pg");
 const pool = new Pool({ connectionString: process.env.DATABASE });
 
@@ -21,7 +23,7 @@ app.get("/api/location", (req, res) => {
       console.log(err);
       res.status(500).send("Error retrieving location from database");
     }
-    res.send(result.rows);
+    res.json(result.rows[0]);
   });
 });
 
