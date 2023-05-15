@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function AboutThisPlace() {
   const [aboutData, setAboutData] = useState(null);
 
-  const fetchAboutData = () => {
+  const fetchAboutData = async () => {
     return fetch(`http://localhost:3050/api/about/2`)
       .then((response) => response.json())
       .then((data) => {
