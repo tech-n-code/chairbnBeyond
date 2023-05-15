@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Amenities from "./components/amenities/amenities";
 import "./index.css";
-import AboutThisPlace from "./components/aboutThisPlace";
+import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
 
 function App() {
   const [count, setCount] = useState(0);
