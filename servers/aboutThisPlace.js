@@ -3,7 +3,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 3050;
+const PORT = process.env.PORT || 3003;
 const { Client } = require("pg");
 const db = new Client({ connectionString: process.env.DATABASE });
 db.connect();
