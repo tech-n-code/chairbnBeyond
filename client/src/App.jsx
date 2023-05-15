@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import Amenities from "./components/amenities/amenities";
 import "./index.css";
 import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,6 @@ function App() {
       <header className="header">
         <div className="navbar">NavBar Component</div>
       </header>
-
       <div className="titlebar">Property Title</div>
       <div className="gallery">Gallery Component</div>
       <div className="columnsContainer">
@@ -30,11 +30,8 @@ function App() {
             <a>Learn More</a>
           </div>
           <div className="host">Host Component</div>
-          <Amenities />
           <AboutThisPlace />
-
-
-
+          <Amenities />
           <div className="calendar">Calendar Component</div>
         </div>
         <div className="rightColumn">
