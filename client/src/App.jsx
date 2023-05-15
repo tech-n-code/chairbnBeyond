@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Amenities from "./components/amenities/amenities";
 import "./index.css";
+import AboutThisPlace from "./components/aboutThisPlace";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,8 +30,11 @@ function App() {
             <a>Learn More</a>
           </div>
           <div className="host">Host Component</div>
-          <div className="about">About this place Component</div>
           <Amenities />
+          <AboutThisPlace />
+
+
+
           <div className="calendar">Calendar Component</div>
         </div>
         <div className="rightColumn">
