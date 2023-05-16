@@ -38,6 +38,81 @@ export default function Reviews() {
                           </div>
                         </div>
                       </div>
+                      <div className={styles["attribute-container-1"]}>
+                        <div className={styles["attribute-container-2"]}>
+                          <div className={styles["attribute-rating-container"]}>
+                            <div className={styles.attribute}>Accuracy</div>
+                            <div className={styles["rating-container"]}>
+                              <div
+                                className={styles["rating-slider-container"]}
+                              >
+                                <span className={styles["rating-slider"]}></span>
+                              </div>
+                              <span className={styles["attribute-rating"]}>5.0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={styles["attribute-container-1"]}>
+                        <div className={styles["attribute-container-2"]}>
+                          <div className={styles["attribute-rating-container"]}>
+                            <div className={styles.attribute}>Communication</div>
+                            <div className={styles["rating-container"]}>
+                              <div
+                                className={styles["rating-slider-container"]}
+                              >
+                                <span className={styles["rating-slider"]}></span>
+                              </div>
+                              <span className={styles["attribute-rating"]}>5.0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={styles["attribute-container-1"]}>
+                        <div className={styles["attribute-container-2"]}>
+                          <div className={styles["attribute-rating-container"]}>
+                            <div className={styles.attribute}>Location</div>
+                            <div className={styles["rating-container"]}>
+                              <div
+                                className={styles["rating-slider-container"]}
+                              >
+                                <span className={styles["rating-slider"]}></span>
+                              </div>
+                              <span className={styles["attribute-rating"]}>5.0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={styles["attribute-container-1"]}>
+                        <div className={styles["attribute-container-2"]}>
+                          <div className={styles["attribute-rating-container"]}>
+                            <div className={styles.attribute}>Check-in</div>
+                            <div className={styles["rating-container"]}>
+                              <div
+                                className={styles["rating-slider-container"]}
+                              >
+                                <span className={styles["rating-slider"]}></span>
+                              </div>
+                              <span className={styles["attribute-rating"]}>5.0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={styles["attribute-container-1"]}>
+                        <div className={styles["attribute-container-2"]}>
+                          <div className={styles["attribute-rating-container"]}>
+                            <div className={styles.attribute}>Value</div>
+                            <div className={styles["rating-container"]}>
+                              <div
+                                className={styles["rating-slider-container"]}
+                              >
+                                <span className={styles["rating-slider"]}></span>
+                              </div>
+                              <span className={styles["attribute-rating"]}>5.0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
