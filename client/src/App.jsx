@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <div className="navbar">NavBar Component</div>
+        <NavBar className="navbar"/>
       </header>
       <div className="titlebar">Property Title</div>
       <div className="gallery">Gallery Component</div>
