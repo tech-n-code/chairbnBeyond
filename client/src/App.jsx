@@ -8,6 +8,7 @@ import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
 import NavBar from "./components/NavBar/NavBar";
 import ChairCover from "./components/ChairCover/ChairCover.jsx";
 import ThingsToKnow from "./components/thingsToKnow/ThingsToKnow";
+import Gallery from "./components/gallery/Gallery"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       </header>
       <div className="titlebar">Property Title</div>
       <div className="gallery">Gallery Component</div>
+      <Gallery/>
       <div className="columnsContainer">
         <div className="leftColumn">
           <div className="overview">Property Overview Component</div>
