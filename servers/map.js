@@ -5,7 +5,7 @@ const cors = require("cors");
 dotenv.config();
 const app = express();
 app.use(cors());
-const PORT = process.env.PORT || 3004;
+const PORT = process.env.PORT || 4000;
 const { Pool } = require("pg");
 const pool = new Pool({ connectionString: process.env.DATABASE });
 
@@ -25,6 +25,16 @@ app.get("/api/location", (req, res) => {
     }
     res.json(result.rows[0]);
   });
+});
+
+app.get("/api/location/description", (req, res) => {
+  pool.query("SELECT description FROM listings", (err, result) => {
+  if (err) {
+    console.log(err);
+    res.status(500).send("Error retrieving location description from database");
+  }
+  res.json(result.rows[0]);
+});
 });
 
 app.listen(PORT, () => {
