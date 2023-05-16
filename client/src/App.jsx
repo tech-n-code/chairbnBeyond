@@ -1,10 +1,14 @@
 import { useState } from "react";
 import Amenities from "./components/amenities/amenities";
 import "./index.css";
+
+import Map from "./components/amenities/Map/Map.jsx"
+
 import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
 import NavBar from "./components/NavBar/NavBar";
 import ChairCover from "./components/ChairCover/ChairCover.jsx";
 import ThingsToKnow from "./components/thingsToKnow/ThingsToKnow";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,8 +34,11 @@ function App() {
         </div>
       </div>
       <div className="reviews">Reviews Component</div>
-      <div className="map">Map Component</div>
+
+      <div className="map">Map Component <Map/></div>
+
       <ThingsToKnow className="things" />
+
       <div className="footer">Footer</div>
     </>
   );
