@@ -70,3 +70,59 @@
     -webkit-box-pack: start;
     -webkit-font-smoothing: antialiased;
 }
+
+.component-subcontainer-1 {
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+      sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 935px;
+    line-break: strict;
+    line-height: 20px;
+    margin-left: 22px;
+    margin-right: 22px;
+    max-width: 1120px;
+    text-size-adjust: 100%;
+    width: 1120px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-border {
+    border-top-color: rgb(221, 221, 221);
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 1px;
+    line-break: strict;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    width: 1120px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.component-subcontainer-2 {
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 934px;
+    line-break: strict;
+    line-height: 20px;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    text-size-adjust: 100%;
+    width: 1120px;
+    -webkit-font-smoothing: antialiased;
+}
