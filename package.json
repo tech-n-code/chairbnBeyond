@@ -2,10 +2,15 @@
   "scripts": {
     "react-server": "cd client && npm start",
     "helloWorld-server": "cd servers && nodemon helloWorld.js",
-    "start": "concurrently \"cd client && npm run dev\" \"cd servers && npm start\""
+    "start": "concurrently \"cd client && npm run dev\" \"cd servers && npm start\"",
+    "test": "vitest"
   },
   "devDependencies": {
-    "concurrently": "^8.0.1"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "concurrently": "^8.0.1",
+    "jsdom": "^22.0.0",
+    "vitest": "^0.31.0"
   },
   "dependencies": {
     "cors": "^2.8.5",

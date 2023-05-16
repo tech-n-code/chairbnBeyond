@@ -1,10 +1,10 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Amenities from "./components/amenities/amenities";
 import "./index.css";
 import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
 import NavBar from "./components/NavBar/NavBar";
+import ChairCover from "./components/ChairCover/ChairCover.jsx";
+import ThingsToKnow from "./components/thingsToKnow/ThingsToKnow";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,16 +19,7 @@ function App() {
       <div className="columnsContainer">
         <div className="leftColumn">
           <div className="overview">Property Overview Component</div>
-          <div className="chaircover">
-            <div className="chaircoverLogo">
-              <span className="pink">chair</span>cover
-            </div>
-            <div className="chaircoverDescription">
-              Every booking includes free protection from Chair cancellations,
-              sitting inaccuracies, and other issues like trouble sitting in.
-            </div>
-            <a>Learn More</a>
-          </div>
+          <ChairCover />
           <div className="host">Host Component</div>
           <AboutThisPlace />
           <Amenities />
@@ -40,7 +31,7 @@ function App() {
       </div>
       <div className="reviews">Reviews Component</div>
       <div className="map">Map Component</div>
-      <div className="things">Things to know</div>
+      <ThingsToKnow className="things" />
       <div className="footer">Footer</div>
     </>
   );
