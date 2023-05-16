@@ -2,7 +2,7 @@ import { useState } from "react";
 import Amenities from "./components/amenities/amenities";
 import "./index.css";
 
-import Map from "./components/amenities/Map/Map.jsx"
+import Map from "./components/Map/Map.jsx"
 
 import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
 import NavBar from "./components/NavBar/NavBar";
