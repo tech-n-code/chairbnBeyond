@@ -21,9 +21,9 @@
     max-height: 50px;
 }
 
-.searchButtonContainer {
-    /* border: 3px solid blue; */
-}
+/* .searchButtonContainer {
+    border: 3px solid blue;
+} */
 
 .searchBarButton {
     background: transparent;
@@ -34,7 +34,7 @@
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    "Helvetica Neue", sans-serif;
+    Helvetica Neue, sans-serif;
     color: #222222;
     font-size: 14px;
     font-weight: 600;
@@ -69,7 +69,7 @@
 .AyhPlusGlobeContainer {
     /* border: 3px solid green; */
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    "Helvetica Neue", sans-serif;
+    Helvetica Neue, sans-serif;
     color: #222222;
     font-size: 14px;
     font-weight: 600;
@@ -81,9 +81,8 @@
 }
 
 .globe {
-    height: 30px;
-    width: 30px;
-    padding-top: 2px;
+    height: 35px;
+    width: 35px;
 }
 
 .userContainer {
