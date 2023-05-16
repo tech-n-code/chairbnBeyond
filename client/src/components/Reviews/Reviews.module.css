@@ -1,14 +1,72 @@
+.overall-section {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 935px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 1324px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* .overall-section::before {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  content: "";
+  display: flex;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 0px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 1324px;
+  -webkit-font-smoothing: antialiased;
+} */
+
+.group-section {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 935px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 1324px;
+  -webkit-font-smoothing: antialiased;
+}
+
 .component-container {
+    align-items: stretch;
     box-sizing: border-box;
     color: rgb(34, 34, 34);
-    display: block;
-    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
     font-size: 16px;
     font-weight: 400;
     height: 935px;
+    justify-content: flex-start;
     line-break: strict;
     line-height: 20px;
-    text-size-adjust: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
     width: 1324px;
+    -webkit-box-align: stretch;
+    -webkit-box-pack: start;
     -webkit-font-smoothing: antialiased;
 }
