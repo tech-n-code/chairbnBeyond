@@ -2,6 +2,7 @@ import styles from "./NavBar.module.css";
 
 function NavBar() {
   return (
+    <div className={styles["navbarContainer"]}>
     <div className={styles["NavBar"]}>
       <div className={styles["logo"]}>
         <img className={styles["chairbnbLogo"]} src="../src/assets/chairbnbLogo.jpg" alt="chairbnb Logo" />
@@ -15,11 +16,11 @@ function NavBar() {
         </button>
       </div>
       <div className={styles["AyhPlusGlobeContainer"]}>
-        <div className={styles["Ayh"]}>Airbnb your home</div>
+        <div className={styles["Ayh"]}>Chairbnb your home</div>
         <img className={styles["globe"]} src="../src/assets/globe.png" alt="globe" />
       </div>
       <div className={styles["userContainer"]}>
-      <button>
+      <button className={styles["userButton"]}>
         <div>
           <img className={styles["hamburger"]} src="../src/assets/hamburger.png" alt="hamburger" />
         </div>
@@ -28,6 +29,7 @@ function NavBar() {
         </div>
       </button>
       </div>
+    </div>
     </div>
   );
 }

@@ -1,10 +1,19 @@
+.navbarContainer {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
 .NavBar {
-    border: 5px solid black;
+    /* border: 5px solid black; */
     display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .logo {
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .chairbnbLogo {
@@ -13,7 +22,7 @@
 }
 
 .searchButtonContainer {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .searchBarButton {
@@ -21,9 +30,9 @@
     cursor: pointer;
     top: 20px;
     border: 1px solid rgb(221, 221, 221);
-    border-radius: 12%;
+    border-radius: 9999px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif;
     color: #222222;
@@ -33,7 +42,9 @@
 }
 
 .littleSearchLabel {
-    padding-right: 50px;
+    padding-right: 80px;
+    padding-left: 10px;
+    padding-top: 2px;
 }
 
 .littleSearchCircle {
@@ -53,21 +64,44 @@
     width: 55%;
     height: auto;
     object-fit: cover;
-    /* max-width: 15px;
-    max-height: 15px; */
 }
 
 .AyhPlusGlobeContainer {
-    border: 3px solid green;
+    /* border: 3px solid green; */
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+}
+
+.Ayh {
+    padding: 10px;
 }
 
 .globe {
     height: 30px;
-    width: 30px; 
+    width: 30px;
+    padding-top: 2px;
 }
 
 .userContainer {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
+    display: flex;
+}
+
+.userButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 9999px;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 40px;
 }
 
 .hamburger {
@@ -78,4 +112,5 @@
 .person {
     height: 25px;
     width: 25px;
+    padding-left: 10px;
 }
