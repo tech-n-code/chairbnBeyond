@@ -20,7 +20,7 @@ function App() {
         <NavBar className="navbar"/>
       </header>
       <div className="titlebar">Property Title</div>
-      <div className="gallery">Gallery Component</div>
+      <div className="gallery"></div>
       <Gallery/>
       <div className="columnsContainer">
         <div className="leftColumn">

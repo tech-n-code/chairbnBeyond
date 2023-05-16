@@ -138,7 +138,7 @@ function Map() {
     <>
       <div id="locationInfo" className={styles["locationInfo"]}>
         <h2>Where you'll be</h2>
-        <div id="map-container" className={styles["map-container"]}></div>;
+        <div id="map-container" className={styles["map-container"]}></div>
         <h3>Minot, North Dakota</h3>
         <p>
           {description}

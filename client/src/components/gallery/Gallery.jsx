@@ -4,7 +4,7 @@ import styles from "./gallery.module.css";
 function Gallery() {
   // const [gallery, setGallery] = useState([]);
   // useEffect(() => {
-  //   fetch("http://localhost:3002/api/gallery")
+  //   fetch("http://localhost:3010/api/gallery")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setAmenities(data);
