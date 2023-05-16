@@ -263,10 +263,10 @@
 
 .subsection-container-4 {
   box-sizing: border-box;
-  color:rgb(34, 34, 34);
+  color: rgb(34, 34, 34);
   display: block;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-size: 16px;
   font-weight: 400;
   height: 172.5px;
@@ -296,10 +296,10 @@
 
 .subtitle-container-2 {
   box-sizing: border-box;
-  color:rgb(34, 34, 34);
+  color: rgb(34, 34, 34);
   display: block;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 20px;
@@ -343,7 +343,7 @@
   color: rgb(34, 34, 34);
   display: block;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 20px;
