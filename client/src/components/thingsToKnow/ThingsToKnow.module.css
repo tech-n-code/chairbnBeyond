@@ -1,0 +1,690 @@
+.component-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 319.5px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 1341px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-subcontainer-1 {
+  align-items: stretch;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 319.5px;
+  justify-content: flex-start;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-size-adjust: 100%;
+  width: 1341px;
+  -webkit-box-align: stretch;
+  -webkit-box-pack: start;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-subcontainer-2 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 319.5px;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 30.5px;
+  margin-right: 30.5px;
+  max-width: 1120px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-border {
+  border-top-color: rgb(221, 221, 221);
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 1px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-subcontainer-3 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 318.5px;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-subcontainer-4 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 222.5px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 50px;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 24px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-title {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  height: 26px;
+  line-break: strict;
+  line-height: 26px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title-section {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  height: 26px;
+  line-break: strict;
+  line-height: 26px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-heading {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  height: 26px;
+  line-break: strict;
+  line-height: 26px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-subcontainer-5 {
+  align-items: stretch;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 172.5px;
+  justify-content: flex-start;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 1136px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.subsection-container-1 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 172.5px;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+  width: 378.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.subsection-container-2 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 168.5px;
+  line-break: strict;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-right: 32px;
+  text-size-adjust: 100%;
+  width: 330.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.subsection-container-3 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 168.5px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 330.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.subsection-container-4 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 172.5px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 362.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.subtitle-container-1 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 20px;
+  line-break: strict;
+  line-height: 20px;
+  margin-bottom: 12px;
+  text-size-adjust: 100%;
+  width: 330.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.subtitle-container-2 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 20px;
+  line-break: strict;
+  line-height: 20px;
+  margin-bottom: 12px;
+  text-size-adjust: 100%;
+  width: 362.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-subtitle-1 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 20px;
+  line-break: strict;
+  line-height: 20px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  width: 330.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-subtitle-2 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 20px;
+  line-break: strict;
+  line-height: 20px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  width: 362.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.list-item-container-1 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 20px;
+  line-break: strict;
+  line-height: 20px;
+  margin-bottom: 16px;
+  text-size-adjust: 100%;
+  width: 330.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.list-item-container-2 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 20px;
+  line-break: strict;
+  line-height: 20px;
+  margin-bottom: 8px;
+  text-size-adjust: 100%;
+  width: 330.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.list-item-container-3 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 20px;
+  line-break: strict;
+  line-height: 20px;
+  margin-bottom: 16px;
+  text-size-adjust: 100%;
+  width: 362.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.list-item-1 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 20px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 206.094px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.list-item-2 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: inline;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.show-more-container-1 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 20.5px;
+  line-break: strict;
+  line-height: 20px;
+  margin-top: 24px;
+  text-size-adjust: 100%;
+  text-decoration: underline;
+  width: 330.664px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.show-more-container-2 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 20.5px;
+  line-break: strict;
+  line-height: 20px;
+  margin-top: 60px;
+  text-size-adjust: 100%;
+  text-decoration: underline;
+  width: 362.664px;
+  -webkit-font-smoothing: antialiased;
+}
+/* 
+.show-more-button {
+  align-items: flex-start;
+  appearance: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
+  background-size: auto;
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(34, 34, 34);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+  sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: 100%;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variation-settings: normal;
+  font-weight: 600;
+  height: 20.5px;
+  letter-spacing: normal;
+  line-break: strict;
+  line-height: normal;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  outline-color: rgb(34, 34, 34);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(34, 34, 34);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: auto;
+  width: 100.32px;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  -webkit-font-smoothing: antialiased;
+}
+
+.show-more-arrow {
+  align-items: center;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+  sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variation-settings: normal;
+  font-weight: 600;
+  height: 20.5px;
+  letter-spacing: normal;
+  line-break: strict;
+  line-height: normal;
+  text-align: center;
+  text-decoration-color: rgb(34, 34, 34);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-size-adjust: 100%;
+  text-transform: none;
+  user-select: auto;
+  vertical-align: bottom;
+  width: 100.32px;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  -webkit-font-smoothing: antialiased;
+}
+
+.show-more {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variation-settings: normal;
+  font-weight: 600;
+  height: 20.5px;
+  letter-spacing: normal;
+  line-break: strict;
+  line-height: normal;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  user-select: auto;
+  width: 84.3203px;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  -webkit-font-smoothing: antialiased;
+} */
+/* 
+.arrow-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+  sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variation-settings: normal;
+  font-weight: 600;
+  height: 12px;
+  letter-spacing: normal;
+  line-break: strict;
+  line-height: normal;
+  margin-left: 4px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-size-adjust: 100%;
+  text-transform: none;
+  user-select: auto;
+  width: 12px;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  -webkit-font-smoothing: antialiased;
+}
+ */

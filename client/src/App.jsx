@@ -3,6 +3,7 @@ import Amenities from "./components/amenities/amenities";
 import "./index.css";
 import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
 import ChairCover from "./components/ChairCover/ChairCover.jsx";
+import ThingsToKnow from "./components/thingsToKnow/ThingsToKnow";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,7 +30,7 @@ function App() {
       </div>
       <div className="reviews">Reviews Component</div>
       <div className="map">Map Component</div>
-      <div className="things">Things to know</div>
+      <ThingsToKnow className="things" />
       <div className="footer">Footer</div>
     </>
   );
