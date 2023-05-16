@@ -31,9 +31,13 @@ export default function Reviews() {
                               <div
                                 className={styles["rating-slider-container"]}
                               >
-                                <span className={styles["rating-slider"]}></span>
+                                <span
+                                  className={styles["rating-slider"]}
+                                ></span>
                               </div>
-                              <span className={styles["attribute-rating"]}>5.0</span>
+                              <span className={styles["attribute-rating"]}>
+                                5.0
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -46,9 +50,13 @@ export default function Reviews() {
                               <div
                                 className={styles["rating-slider-container"]}
                               >
-                                <span className={styles["rating-slider"]}></span>
+                                <span
+                                  className={styles["rating-slider"]}
+                                ></span>
                               </div>
-                              <span className={styles["attribute-rating"]}>5.0</span>
+                              <span className={styles["attribute-rating"]}>
+                                5.0
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -56,14 +64,20 @@ export default function Reviews() {
                       <div className={styles["attribute-container-1"]}>
                         <div className={styles["attribute-container-2"]}>
                           <div className={styles["attribute-rating-container"]}>
-                            <div className={styles.attribute}>Communication</div>
+                            <div className={styles.attribute}>
+                              Communication
+                            </div>
                             <div className={styles["rating-container"]}>
                               <div
                                 className={styles["rating-slider-container"]}
                               >
-                                <span className={styles["rating-slider"]}></span>
+                                <span
+                                  className={styles["rating-slider"]}
+                                ></span>
                               </div>
-                              <span className={styles["attribute-rating"]}>5.0</span>
+                              <span className={styles["attribute-rating"]}>
+                                5.0
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -76,9 +90,13 @@ export default function Reviews() {
                               <div
                                 className={styles["rating-slider-container"]}
                               >
-                                <span className={styles["rating-slider"]}></span>
+                                <span
+                                  className={styles["rating-slider"]}
+                                ></span>
                               </div>
-                              <span className={styles["attribute-rating"]}>5.0</span>
+                              <span className={styles["attribute-rating"]}>
+                                5.0
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -91,9 +109,13 @@ export default function Reviews() {
                               <div
                                 className={styles["rating-slider-container"]}
                               >
-                                <span className={styles["rating-slider"]}></span>
+                                <span
+                                  className={styles["rating-slider"]}
+                                ></span>
                               </div>
-                              <span className={styles["attribute-rating"]}>5.0</span>
+                              <span className={styles["attribute-rating"]}>
+                                5.0
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -106,9 +128,57 @@ export default function Reviews() {
                               <div
                                 className={styles["rating-slider-container"]}
                               >
-                                <span className={styles["rating-slider"]}></span>
+                                <span
+                                  className={styles["rating-slider"]}
+                                ></span>
                               </div>
-                              <span className={styles["attribute-rating"]}>5.0</span>
+                              <span className={styles["attribute-rating"]}>
+                                5.0
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles["reviews-section"]}>
+                  <div className={styles["reviews-section-container"]}>
+                    <div className={styles["reviews-section-spacing"]}>
+                      <div className={styles["individual-review-container-1"]}>
+                        <div
+                          className={styles["individual-review-container-1"]}
+                        >
+                          <div className={styles["user-date-section"]}>
+                            <div className={styles["user-date-container"]}>
+                              <div className={styles["name-date-container"]}>
+                                <h3 className={styles["user-name"]}>Tanya</h3>
+                                <div
+                                  className={styles["review-date-container"]}
+                                >
+                                  <div className={styles["review-date"]}>
+                                    <ol className={styles["date-list"]}>
+                                      <li className={styles.date}>
+                                        October 2022
+                                      </li>
+                                    </ol>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className={styles["user-photo-container"]}>
+                              <div
+                                className={styles["user-photo-formatting-1"]}
+                              >
+                                <div
+                                  className={styles["user-photo-formatting-2"]}
+                                >
+                                  <div className={styles["user-photo-formatting-3"]}>
+                                    <img className={styles.picture} src="https://a0.muscache.com/im/pictures/user/5fc87401-013c-453f-b853-352d2b213b92.jpg?im_w=240" alt="Tanya" />
+                                    <div className={styles["user-unknown"]}></div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
