@@ -1,0 +1,14 @@
+.component-container {
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 935px;
+    line-break: strict;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    width: 1324px;
+    -webkit-font-smoothing: antialiased;
+}

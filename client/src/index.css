@@ -242,7 +242,7 @@ button:focus-visible {
   text-align: center;
 }
 
-.reviews {
+/* .reviews {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -252,7 +252,7 @@ button:focus-visible {
   max-width: 1280px;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 .map {
   display: flex;
