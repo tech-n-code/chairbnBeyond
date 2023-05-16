@@ -9,3 +9,6 @@ GET http://localhost:3002/api/amenities/1
 
 ###Get a description for one property
 GET http://localhost:3050/api/about/2
+
+###Get images to display in gallery
+GET http://localhost:3010/api/gallery
