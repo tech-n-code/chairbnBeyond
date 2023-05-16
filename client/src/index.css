@@ -179,41 +179,6 @@ button:focus-visible {
   text-align: center;
 }
 
-.chaircover {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  /* justify-content: flex-start; */
-  align-items: flex-start;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  /* text-align: center; */
-  color: #222222;
-}
-
-.pink {
-  color: rgb(255, 56, 92);
-}
-
-.chaircoverLogo {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 2rem;
-}
-
-a {
-  text-decoration: underline;
-  cursor: pointer;
-  color: #222222;
-  font-weight: 600;
-}
-.chaircoverDescription {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .host {
   display: flex;
   flex-wrap: wrap;
@@ -239,15 +204,18 @@ a {
 }
 
 .amenities {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .calendar {
@@ -318,4 +286,31 @@ a {
   padding: 0.8em 1.2em;
   background-color: #fbf9f9;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  padding: 2rem;
+  color: #222222;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.aboutTitle {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 22px;
+  padding-bottom: 0%;
+  margin: 0%;
+  padding-bottom: 16px;
+}
+
+.aboutShowMore {
+  margin-top: 16px;
 }

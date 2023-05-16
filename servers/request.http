@@ -6,3 +6,6 @@ GET http://localhost:3002/api/amenities
 
 ###Get Amenities for a specific listing
 GET http://localhost:3002/api/amenities/1
+
+###Get a description for one property
+GET http://localhost:3050/api/about/2
