@@ -1,4 +1,4 @@
-.overall-section {
+.reviews-section {
   box-sizing: border-box;
   color: rgb(34, 34, 34);
   display: block;
@@ -48,81 +48,253 @@
 }
 
 .component-container {
-    align-items: stretch;
-    box-sizing: border-box;
-    color: rgb(34, 34, 34);
-    display: flex;
-    flex-wrap: wrap;
-    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+  align-items: stretch;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
     sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    height: 935px;
-    justify-content: flex-start;
-    line-break: strict;
-    line-height: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 80px;
-    padding-right: 80px;
-    width: 1324px;
-    -webkit-box-align: stretch;
-    -webkit-box-pack: start;
-    -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-weight: 400;
+  height: 935px;
+  justify-content: flex-start;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 1324px;
+  -webkit-box-align: stretch;
+  -webkit-box-pack: start;
+  -webkit-font-smoothing: antialiased;
 }
 
 .component-subcontainer-1 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 935px;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 22px;
+  margin-right: 22px;
+  max-width: 1120px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-border {
+  border-top-color: rgb(221, 221, 221);
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 1px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.component-subcontainer-2 {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 934px;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.lean-section {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 838px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title-container {
     box-sizing: border-box;
     color: rgb(34, 34, 34);
     display: block;
     font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
       sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    height: 935px;
+    font-size: 22px;
+    font-weight: 600;
+    height: 26px;
     line-break: strict;
-    line-height: 20px;
-    margin-left: 22px;
-    margin-right: 22px;
-    max-width: 1120px;
+    line-height: 26px;
+    margin-bottom: 32px;
     text-size-adjust: 100%;
     width: 1120px;
     -webkit-font-smoothing: antialiased;
 }
 
-.top-border {
-    border-top-color: rgb(221, 221, 221);
-    border-top-style: solid;
-    border-top-width: 1px;
+.star-container {
     box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: inline-flex;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+      sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    height: 16px;
+    line-break: strict;
+    line-height: 26px;
+    margin-bottom: 8px;
+    text-size-adjust: 100%;
+    width: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.rating-reviews {
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: inline-flex;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+      sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    height: 26px;
+    line-break: strict;
+    line-height: 26px;
+    text-size-adjust: 100%;
+    width: 164.672px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section-header {
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: inline-flex;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+      sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    height: 26px;
+    line-break: strict;
+    line-height: 26px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 164.672px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* .rating-reviews-text {
+    border-bottom-color: rgb(34, 34, 34);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(34, 34, 34);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(34, 34, 34);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(34, 34, 34);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(100%);
     color: rgb(34, 34, 34);
     display: block;
     font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
     sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 600;
     height: 1px;
     line-break: strict;
-    line-height: 20px;
-    text-size-adjust: 100%;
-    width: 1120px;
+    line-height: 26px;
+    overflow-x: clip;
+    overflow-y: clip;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
     -webkit-font-smoothing: antialiased;
-}
+} */
 
-.component-subcontainer-2 {
+.rating-reviews-text {
+    border-bottom-color: rgb(34, 34, 34);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(34, 34, 34);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(34, 34, 34);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(34, 34, 34);
+    border-top-style: none;
+    border-top-width: 0px;
     box-sizing: border-box;
     color: rgb(34, 34, 34);
     display: block;
-    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-    sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    height: 934px;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    height: 1px;
     line-break: strict;
-    line-height: 20px;
-    padding-bottom: 48px;
-    padding-top: 48px;
-    text-size-adjust: 100%;
-    width: 1120px;
+    line-height: 26px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    white-space: nowrap;
+    width: 1px;
     -webkit-font-smoothing: antialiased;
-}
+  }
+  
