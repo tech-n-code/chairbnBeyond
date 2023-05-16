@@ -70,7 +70,7 @@ button:focus-visible {
   }
 } */
 
-.navbar {
+/* .navbar {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(255, 255, 255);
@@ -103,7 +103,7 @@ button:focus-visible {
   width: 100%;
   z-index: 0;
   max-width: none;
-}
+} */
 
 .titlebar {
   align-items: stretch;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Amenities from "./components/amenities/amenities";
 import "./index.css";
 import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
+import NavBar from "./components/NavBar/NavBar";
 import ChairCover from "./components/ChairCover/ChairCover.jsx";
 import ThingsToKnow from "./components/thingsToKnow/ThingsToKnow";
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <div className="navbar">NavBar Component</div>
+        <NavBar className="navbar"/>
       </header>
       <div className="titlebar">Property Title</div>
       <div className="gallery">Gallery Component</div>
