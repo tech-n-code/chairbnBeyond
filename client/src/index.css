@@ -70,7 +70,7 @@ button:focus-visible {
   }
 } */
 
-.navbar {
+/* .navbar {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(255, 255, 255);
@@ -103,7 +103,7 @@ button:focus-visible {
   width: 100%;
   z-index: 0;
   max-width: none;
-}
+} */
 
 .titlebar {
   align-items: stretch;
@@ -254,17 +254,18 @@ button:focus-visible {
   text-align: center;
 }
 
-.map {
+/* .map {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1120px;
   padding: 2rem;
   text-align: center;
-}
+  min-height: 600px;
+} */
 
 /* .things {
   display: flex;
