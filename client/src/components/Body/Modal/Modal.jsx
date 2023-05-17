@@ -42,3 +42,5 @@ function Modal({ isOpen, onClose }) {
     </div>
   );
 }
+
+export default Modal;
