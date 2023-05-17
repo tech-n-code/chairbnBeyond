@@ -7,7 +7,7 @@ import ChairCover from "./ChairCover/ChairCover";
 
 import AboutThisPlace from "./AboutThisPlace/AboutThisPlace";
 import Amenities from "./Amenities/Amenities";
-
+import Reservation from "./Reservation/Reservation";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
 
@@ -27,7 +27,7 @@ function Body() {
             <div className="calendar">Calendar Component</div>
           </div>
           <div className={styles["body-right-column-container"]}>
-            <div className={styles["reservation"]}>Reservation Component</div>
+            <Reservation className={styles["reservation"]}/>
           </div>
         </div>
         <div className="reviews">Reviews Component</div>
