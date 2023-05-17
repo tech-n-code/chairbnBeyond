@@ -18,24 +18,16 @@ function Body() {
         <div className="titlebar">Property Title</div>
         <Gallery />
         <div className={styles["body-after-gallery-container"]}>
-          <div className={styles["body-column-container"]}>
-            <div className={styles["body-left-column-container"]}>
-              <div className={styles["body-column-left-div"]}>
-                <div className="overview">Property Overview Component</div>
-                <ChairCover />
-                <div className="host">Host Component</div>
-                <AboutThisPlace />
-                <Amenities />
-                <div className="calendar">Calendar Component</div>
-              </div>
-            </div>
-            <div className={styles["body-right-column-container"]}>
-              <div className={styles["body-column-right-conatiner-div"]}>
-                <div className={styles["body-column-right-div"]}>
-                  <div className={styles["reservation"]}>Reservation Component</div>
-                </div>
-              </div>
-            </div>
+          <div className={styles["body-left-column-container"]}>
+            <div className="overview">Property Overview Component</div>
+            <ChairCover />
+            <div className="host">Host Component</div>
+            <AboutThisPlace />
+            <Amenities />
+            <div className="calendar">Calendar Component</div>
+          </div>
+          <div className={styles["body-right-column-container"]}>
+            <div className={styles["reservation"]}>Reservation Component</div>
           </div>
         </div>
         <div className="reviews">Reviews Component</div>

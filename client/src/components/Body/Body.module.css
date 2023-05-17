@@ -1,5 +1,5 @@
 .body-container {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: rgb(34, 34, 34);
   display: block;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
@@ -9,10 +9,11 @@
   line-break: strict;
   line-height: 20px;
   position: relative;
-  text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
+  /* text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; */
 }
 
+/* 
 .body-after-gallery-container {
   box-sizing: border-box;
   color: rgb(34, 34, 34);
@@ -25,32 +26,10 @@
   line-height: 20px;
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
-.body-column-container {
-  align-items: stretch;
-  box-sizing: border-box;
-  color: rgb(34, 34, 34);
-  display: flex;
-  flex-wrap: wrap;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  justify-content: flex-start;
-  line-break: strict;
-  line-height: 20px;
-  /* margin-left: 493.889px;
-  margin-right: 493.889px; */
-  max-width: 1280px;
-  padding-left: 80px;
-  padding-right: 80px;
-  text-size-adjust: 100%;
-  width: 1280px;
-  -webkit-font-smoothing: antialiased;
-}
 
-.body-left-column-container {
+/* .body-left-column-container {
   box-sizing: border-box;
   color: rgb(34, 34, 34);
   display: block;
@@ -66,23 +45,10 @@
   text-size-adjust: 100%;
   width: 653.333px;
   -webkit-font-smoothing: antialiased;
-}
+} */
 
-.body-column-left-div {
-  box-sizing: border-box;
-  color: rgb(34, 34, 34);
-  display: block;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-break: strict;
-  line-height: 20px;
-  text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-}
 
-.body-column-right-container {
+/* .body-right-column-container {
   box-sizing: border-box;
   color: rgb(34, 34, 34);
   display: block;
@@ -98,41 +64,7 @@
   text-size-adjust: 100%;
   width: 373.333px;
   -webkit-font-smoothing: antialiased;
-}
-
-.body-column-right-container-div {
-  box-sizing: border-box;
-  color: rgb(34, 34, 34);
-  display: inline-block;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-break: strict;
-  line-height: 20px;
-  padding-right: 1px;
-  /* position: sticky; */
-  text-size-adjust: 100%;
-  top: 80px;
-  width: 373.333px;
-  z-index: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
-.body-column-right-div {
-  box-sizing: border-box;
-  color: rgb(34, 34, 34);
-  display: block;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-break: strict;
-  line-height: 20px;
-  padding-bottom: 48px;
-  text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-}
+} */
 
 .reservation {
   /* display: flex;
