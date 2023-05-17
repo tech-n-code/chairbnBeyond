@@ -131,7 +131,7 @@ button:focus-visible {
   -webkit-font-smoothing: antialiased;
 }
 
-.gallery {
+/* .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -141,7 +141,7 @@ button:focus-visible {
   max-width: 1280px;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 .columnsContainer {
   display: flex;
@@ -191,17 +191,6 @@ button:focus-visible {
   text-align: center;
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
-}
 
 .amenities {
   box-sizing: border-box;
@@ -287,31 +276,4 @@ button:focus-visible {
   padding: 0.8em 1.2em;
   background-color: #fbf9f9;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
-}
-
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  align-items: flex-start;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  color: #222222;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-.aboutTitle {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-size: 22px;
-  padding-bottom: 0%;
-  margin: 0%;
-  padding-bottom: 16px;
-}
-
-.aboutShowMore {
-  margin-top: 16px;
 }
