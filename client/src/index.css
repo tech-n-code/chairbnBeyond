@@ -1,5 +1,3 @@
-
-
 .titlebar {
   align-items: stretch;
   box-sizing: border-box;
@@ -21,32 +19,6 @@
   width: 100%;
 }
 
-.columnsContainer {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding-right: 40px;
-  padding-left: 40px;
-}
-
-.leftColumn {
-  width: 350px;
-}
-
-.rightColumn {
-  flex: 1;
-  padding-left: 100px;
-}
-
-.reservation {
-  position: sticky;
-  top: 20px;
-  border: 1px solid rgb(221, 221, 221);
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-}
-
 .overview {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +30,6 @@
   padding: 2rem;
   text-align: center;
 }
-
 
 
 .host {
@@ -73,23 +44,6 @@
   text-align: center;
 }
 
-
-.amenities {
-  box-sizing: border-box;
-  color: rgb(34, 34, 34);
-  display: block;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-break: strict;
-  line-height: 20px;
-  padding-bottom: 48px;
-  padding-top: 48px;
-  -webkit-font-smoothing: antialiased;
-
-}
-
 .calendar {
   display: flex;
   flex-wrap: wrap;
@@ -101,30 +55,6 @@
   padding: 2rem;
   text-align: center;
 }
-
-.reservations {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* .reviews {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
-} */
 
 .footer {
   display: flex;
