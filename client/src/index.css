@@ -105,11 +105,6 @@ button:focus-visible {
   max-width: none;
 } */
 
-.columnsContainer {
-  margin: 0;
-  padding-right: 40px;
-  padding-left: 40px;
-}
 
 .titlebar {
   align-items: stretch;
@@ -119,39 +114,25 @@ button:focus-visible {
   flex-wrap: wrap;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  height: 85.9722px;
+  font-size: 21px;
+  font-weight: 500;
+  height: 85px;
   justify-content: flex-start;
-  line-break: strict;
-  line-height: 20px;
   margin-left: 0px;
   margin-right: 0px;
-  max-width: none;
   padding-left: 80px;
   padding-right: 80px;
-  text-size-adjust: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
-  -webkit-box-align: stretch;
-  -webkit-box-pack: start;
-  -webkit-font-smoothing: antialiased;
 }
-
-/* .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
-} */
 
 .columnsContainer {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .leftColumn {
@@ -196,7 +177,6 @@ button:focus-visible {
   padding: 2rem;
   text-align: center;
 }
-
 
 .amenities {
   box-sizing: border-box;
