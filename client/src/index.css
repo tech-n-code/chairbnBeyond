@@ -153,7 +153,6 @@ button:focus-visible {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 }
 
-
 .overview {
   display: flex;
   flex-wrap: wrap;
@@ -166,6 +165,8 @@ button:focus-visible {
   text-align: center;
 }
 
+
+
 .host {
   display: flex;
   flex-wrap: wrap;
@@ -177,6 +178,7 @@ button:focus-visible {
   padding: 2rem;
   text-align: center;
 }
+
 
 .amenities {
   box-sizing: border-box;
@@ -191,6 +193,7 @@ button:focus-visible {
   padding-bottom: 48px;
   padding-top: 48px;
   -webkit-font-smoothing: antialiased;
+
 }
 
 .calendar {

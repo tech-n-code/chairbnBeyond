@@ -1,0 +1,179 @@
+.master_container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title_div {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 24px;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title_header {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-break: strict;
+  line-height: 26px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amenities_container {
+  align-items: stretch;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: flex-start;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 669.323px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amenity-table {
+  align-items: stretch;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: flex-start;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: -8px;
+  margin-right: -8px;
+  text-size-adjust: 100%;
+  width: 629.774px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amenity_div {
+  align-items: center;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: flex-end;
+  line-break: strict;
+  line-height: 20px;
+  max-width: 83.3333%;
+  padding-bottom: 16px;
+  width: 83.3333%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amenity_svg {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  fill: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 24px;
+  line-break: strict;
+  line-height: 20px;
+  overflow-clip-margin: content-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-size-adjust: 100%;
+  width: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amenity {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.show-amenities-button {
+  align-items: flex-start;
+  appearance: button;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(247, 247, 247);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.show-amenities-button:hover {
+  background-color: #dddddd;
+}
+
+.show-amenities-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.show-amenities-button:active {
+  transform: translateY(1px);
+}
