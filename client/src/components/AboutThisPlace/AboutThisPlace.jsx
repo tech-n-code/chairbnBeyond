@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./aboutThisPlace.modules.css";
+import styles from "./AboutThisPlace.module.css";
 
 function AboutThisPlace() {
   const [aboutData, setAboutData] = useState(null);
@@ -21,9 +21,9 @@ function AboutThisPlace() {
     <div className={styles["about"]}>
       {aboutData !== null ? (
         <>
-          <h2 className="aboutTitle">About This Place</h2>
+          <h2 className={styles["aboutTitle"]}>About This Place</h2>
           <div>{aboutData[0].description}</div>
-          <a className="aboutShowMore">Show more &gt;</a>
+          <a className={styles["aboutShowMore"]}>Show more &gt;</a>
         </>
       ) : (
         <div>Loading...</div>
