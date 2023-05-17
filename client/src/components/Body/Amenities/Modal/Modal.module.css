@@ -357,3 +357,23 @@
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
+.modal-amenity-text-div {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: center;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: 673.142px;
+  -webkit-font-smoothing: antialiased;
+}
