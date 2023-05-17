@@ -10,6 +10,7 @@ import NavBar from "./components/NavBar/NavBar";
 import ChairCover from "./components/ChairCover/ChairCover.jsx";
 import ThingsToKnow from "./components/thingsToKnow/ThingsToKnow";
 import Gallery from "./components/gallery/Gallery"
+import HostInfo from "./components/Host/Host.jsx"
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
         <div className="leftColumn">
           <div className="overview">Property Overview Component</div>
           <ChairCover />
-          <div className="host">Host Component</div>
+          <div className="host"><HostInfo/></div>
           <AboutThisPlace />
           <Amenities />
           <div className="calendar">Calendar Component</div>
