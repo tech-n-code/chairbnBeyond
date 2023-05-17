@@ -8,8 +8,10 @@ import ChairCover from "./ChairCover/ChairCover";
 import AboutThisPlace from "./AboutThisPlace/AboutThisPlace";
 import Amenities from "./Amenities/Amenities";
 
+import Calendar from "./Calendar/Calendar";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
+
 
 function Body() {
   return (
@@ -26,7 +28,7 @@ function Body() {
                 <div className="host">Host Component</div>
                 <AboutThisPlace />
                 <Amenities />
-                <div className="calendar">Calendar Component</div>
+                <Calendar />
               </div>
             </div>
             <div className={styles["body-right-column-container"]}>

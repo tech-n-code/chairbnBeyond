@@ -1,0 +1,48 @@
+.calendar-component {
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 529px;
+    line-break: strict;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    border: 2px solid red;
+}
+
+.group-section {
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 529px;
+    line-break: strict;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-border {
+    border-top-color: rgb(221, 221, 221);
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 1px;
+    line-break: strict;
+    line-height: 20px;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
