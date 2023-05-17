@@ -70,7 +70,7 @@ button:focus-visible {
   }
 } */
 
-.navbar {
+/* .navbar {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(255, 255, 255);
@@ -103,7 +103,8 @@ button:focus-visible {
   width: 100%;
   z-index: 0;
   max-width: none;
-}
+} */
+
 
 .titlebar {
   align-items: stretch;
@@ -113,39 +114,25 @@ button:focus-visible {
   flex-wrap: wrap;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  height: 85.9722px;
+  font-size: 21px;
+  font-weight: 500;
+  height: 85px;
   justify-content: flex-start;
-  line-break: strict;
-  line-height: 20px;
   margin-left: 0px;
   margin-right: 0px;
-  max-width: none;
   padding-left: 80px;
   padding-right: 80px;
-  text-size-adjust: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
-  -webkit-box-align: stretch;
-  -webkit-box-pack: start;
-  -webkit-font-smoothing: antialiased;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
 }
 
 .columnsContainer {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .leftColumn {
@@ -178,41 +165,7 @@ button:focus-visible {
   text-align: center;
 }
 
-.chaircover {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif;
-  /* justify-content: flex-start; */
-  align-items: flex-start;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  /* text-align: center; */
-  color: #222222;
-}
 
-.pink {
-  color: rgb(255, 56, 92);
-}
-
-.chaircoverLogo {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2rem;
-}
-
-a {
-  text-decoration: underline;
-  cursor: pointer;
-  color: #222222;
-  font-weight: 600;
-}
-.chaircoverDescription {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 
 .host {
   display: flex;
@@ -226,16 +179,21 @@ a {
   text-align: center;
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
+
+.amenities {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  -webkit-font-smoothing: antialiased;
+
 }
 
 .calendar {
@@ -274,19 +232,20 @@ a {
   text-align: center;
 }
 
-.map {
+/* .map {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1120px;
   padding: 2rem;
   text-align: center;
-}
+  min-height: 600px;
+} */
 
-.things {
+/* .things {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -296,7 +255,7 @@ a {
   max-width: 1280px;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 .footer {
   display: flex;

@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 //Routes
 
 app.get("/api/amenities", (req, res) => {
-  db.query("SELECT * FROM amenities", (err, result) => {
+  db.query("SELECT * FROM amenities;", (err, result) => {
     if (err) {
       console.log(err);
       res.status(500).send("Error retrieving amenities from database");
