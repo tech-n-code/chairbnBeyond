@@ -32,7 +32,7 @@ function Body() {
             <div className={styles["body-right-column-container"]}>
               <div className={styles["body-column-right-conatiner-div"]}>
                 <div className={styles["body-column-right-div"]}>
-                  <div className="reservation">Reservation Component</div>
+                  <div className={styles["reservation"]}>Reservation Component</div>
                 </div>
               </div>
             </div>

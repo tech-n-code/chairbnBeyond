@@ -38,14 +38,7 @@
   padding-left: 100px;
 }
 
-.reservation {
-  position: sticky;
-  top: 20px;
-  border: 1px solid rgb(221, 221, 221);
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-}
+
 
 .overview {
   display: flex;
@@ -102,17 +95,6 @@
   text-align: center;
 }
 
-.reservations {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
-}
 
 .reviews {
   display: flex;
