@@ -8,8 +8,7 @@
   font-weight: 400;
   line-break: strict;
   line-height: 20px;
-  padding-bottom: 48px;
-  padding-top: 48px;
+  padding: 30px;
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -59,7 +58,8 @@
   box-sizing: border-box;
   color: rgb(34, 34, 34);
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif;
   font-size: 16px;
@@ -67,9 +67,9 @@
   justify-content: flex-start;
   line-break: strict;
   line-height: 20px;
-  margin-left: -8px;
-  margin-right: -8px;
-  width: 669.323px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 60%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -86,10 +86,10 @@
   justify-content: flex-start;
   line-break: strict;
   line-height: 20px;
-  margin-left: -8px;
-  margin-right: -8px;
+  margin-left: 0px;
+  margin-right: 0px;
   text-size-adjust: 100%;
-  width: 629.774px;
+  width: 60%;
   -webkit-font-smoothing: antialiased;
 }
 
