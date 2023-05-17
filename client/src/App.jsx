@@ -1,38 +1,14 @@
-import { useState } from "react";
-import Amenities from "./components/amenities/amenities";
 import "./index.css";
-import AboutThisPlace from "./components/AboutThisPlace/AboutThisPlace";
-import ChairCover from "./components/ChairCover/ChairCover.jsx";
-import ThingsToKnow from "./components/thingsToKnow/ThingsToKnow";
-import Reviews from "./components/Reviews/Reviews";
+import Header from "./components/Header/Header";
+import Body from "./components/Body/Body";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <header className="header">
-        <div className="navbar">NavBar Component</div>
-      </header>
-      <div className="titlebar">Property Title</div>
-      <div className="gallery">Gallery Component</div>
-      <div className="columnsContainer">
-        <div className="leftColumn">
-          <div className="overview">Property Overview Component</div>
-          <ChairCover />
-          <div className="host">Host Component</div>
-          <AboutThisPlace />
-          <Amenities />
-          <div className="calendar">Calendar Component</div>
-        </div>
-        <div className="rightColumn">
-          <div className="reservation">Reservation Component</div>
-        </div>
-      </div>
-      <Reviews className="reviews" />
-      <div className="map">Map Component</div>
-      <ThingsToKnow className="things" />
-      <div className="footer">Footer</div>
+      <Header />
+      <Body />
+      <Footer />
     </>
   );
 }

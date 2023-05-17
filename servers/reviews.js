@@ -15,7 +15,7 @@ app.use(cors());
 
 app.get("/api/reviews", (req, res) => {
   pool.query(
-    "SELECT reviews.rating, reviews.review, users.fname FROM reviews JOIN users ON users.id = reviews.userid WHERE listingid = 1;",
+    "SELECT reviews.rating, reviews.review, users.fname, users.photo_url FROM reviews JOIN users ON users.id = reviews.userid WHERE listingid = 1;",
     (err, result) => {
       if (err) {
         console.error(err);

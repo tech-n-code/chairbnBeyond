@@ -42,6 +42,21 @@ app.get("/api/amenities/:id", (req, res) => {
   );
 });
 
+app.get("/api/amenities/ten/:id", (req, res) => {
+  const id = req.params.id;
+  db.query(
+    "SELECT listing_amenities.id, amenities.amenity FROM listing_amenities JOIN amenities ON amenities.id = listing_amenities.amenityId WHERE listingId = $1 LIMIT 10",
+    [id],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send("Error retrieving amenities from database");
+      }
+      res.send(result.rows);
+    }
+  );
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}...`);
 });

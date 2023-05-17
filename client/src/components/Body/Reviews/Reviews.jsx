@@ -19,6 +19,10 @@ export default function Reviews() {
     fetchReviews();
   }, []);
 
+  const averageRating =
+    reviews.length > 0
+      ? reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length
+      : 0;
 
   return (
     <div className={styles["reviews-component"]}>
@@ -33,7 +37,7 @@ export default function Reviews() {
                   <span className={styles["rating-reviews"]}>
                     <h2 className={styles["section-header"]}>
                       <span className={styles["rating-reviews-text"]}>
-                        4.95 · 21 reviews
+                        {averageRating.toFixed(2)} · {reviews.length} reviews
                       </span>
                     </h2>
                   </span>
@@ -163,51 +167,69 @@ export default function Reviews() {
                 <div className={styles["reviews-section"]}>
                   <div className={styles["reviews-section-container"]}>
                     <div className={styles["reviews-section-spacing"]}>
-
-
-                    {reviews.map((review, index) => (
-              <div className={styles["individual-review-container-1"]} key={index}>
-                {/* Individual review JSX */}
-                <div className={styles["user-date-section"]}>
-                  <div className={styles["user-date-container"]}>
-                    <div className={styles["name-date-container"]}>
-                      <h3 className={styles["user-name"]}>{review.fname}</h3>
-                      <div className={styles["review-date-container"]}>
-                        <div className={styles["review-date"]}>
-                          <ol className={styles["date-list"]}>
-                            <li className={styles.date}>{review.date}</li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles["user-photo-container"]}>
-                      <div className={styles["user-photo-formatting-1"]}>
-                        <div className={styles["user-photo-formatting-2"]}>
-                          <div className={styles["user-photo-formatting-3"]}>
-                            <img
-                              className={styles.picture}
-                              src={review.userPhoto}
-                              alt={review.fname}
-                            />
-                            <div className={styles["user-unknown"]}></div>
+                      {reviews.map((review, index) => (
+                        <div
+                          className={styles["individual-review-container-1"]}
+                          key={index}
+                        >
+                          {/* Individual review JSX */}
+                          <div className={styles["user-date-section"]}>
+                            <div className={styles["user-date-container"]}>
+                              <div className={styles["name-date-container"]}>
+                                <h3 className={styles["user-name"]}>
+                                  {review.fname}
+                                </h3>
+                                <div
+                                  className={styles["review-date-container"]}
+                                >
+                                  <div className={styles["review-date"]}>
+                                    <ol className={styles["date-list"]}>
+                                      <li className={styles.date}>
+                                        {review.date}
+                                      </li>
+                                    </ol>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className={styles["user-photo-container"]}>
+                                <div
+                                  className={styles["user-photo-formatting-1"]}
+                                >
+                                  <div
+                                    className={
+                                      styles["user-photo-formatting-2"]
+                                    }
+                                  >
+                                    <div
+                                      className={
+                                        styles["user-photo-formatting-3"]
+                                      }
+                                    >
+                                      <img
+                                        className={styles.picture}
+                                        src={review.photo_url}
+                                        alt={review.fname}
+                                      />
+                                      <div
+                                        className={styles["user-unknown"]}
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className={styles["review-container-1"]}>
+                            <div className={styles["review-container-2"]}>
+                              <span className={styles["review-span-1"]}>
+                                <span className={styles["review-span-2"]}>
+                                  {review.review}
+                                </span>
+                              </span>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles["review-container-1"]}>
-                  <div className={styles["review-container-2"]}>
-                    <span className={styles["review-span-1"]}>
-                      <span className={styles["review-span-2"]}>
-                        {review.review}
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-
+                      ))}
 
                       {/* <div className={styles["individual-review-container-1"]}>
                         <div
@@ -270,7 +292,7 @@ export default function Reviews() {
                           </div>
                         </div>
                       </div> */}
-                      
+
                       {/* <div className={styles["individual-review-container-1"]}>
                         <div
                           className={styles["individual-review-container-1"]}
@@ -581,7 +603,7 @@ export default function Reviews() {
                 </div>
                 <div className={styles["reviews-button-container"]}>
                   <button className={styles["reviews-button"]}>
-                    Show all 21 reviews
+                    Show all {reviews.length} reviews
                   </button>
                 </div>
               </section>
