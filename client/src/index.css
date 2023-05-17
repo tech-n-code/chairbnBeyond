@@ -166,7 +166,6 @@ button:focus-visible {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 }
 
-
 .overview {
   display: flex;
   flex-wrap: wrap;
@@ -183,7 +182,8 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
   /* justify-content: flex-start; */
   align-items: flex-start;
   margin: 0 auto;
@@ -199,7 +199,7 @@ button:focus-visible {
 }
 
 .chaircoverLogo {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 2rem;
 }
 
@@ -236,21 +236,6 @@ a {
   max-width: 1280px;
   padding: 2rem;
   text-align: center;
-}
-
-.amenities {
-  box-sizing: border-box;
-  color: rgb(34, 34, 34);
-  display: block;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-break: strict;
-  line-height: 20px;
-  padding-bottom: 48px;
-  padding-top: 48px;
-  -webkit-font-smoothing: antialiased;
 }
 
 .calendar {
