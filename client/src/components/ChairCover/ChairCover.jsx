@@ -1,4 +1,4 @@
-import styles from "./chairCover.module.css"
+import styles from "./ChairCover.module.css"
 
 function ChairCover() {
 
