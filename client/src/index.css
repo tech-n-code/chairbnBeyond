@@ -105,6 +105,7 @@ button:focus-visible {
   max-width: none;
 } */
 
+
 .titlebar {
   align-items: stretch;
   box-sizing: border-box;
@@ -113,39 +114,25 @@ button:focus-visible {
   flex-wrap: wrap;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  height: 85.9722px;
+  font-size: 21px;
+  font-weight: 500;
+  height: 85px;
   justify-content: flex-start;
-  line-break: strict;
-  line-height: 20px;
   margin-left: 0px;
   margin-right: 0px;
-  max-width: none;
   padding-left: 80px;
   padding-right: 80px;
-  text-size-adjust: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
-  -webkit-box-align: stretch;
-  -webkit-box-pack: start;
-  -webkit-font-smoothing: antialiased;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
 }
 
 .columnsContainer {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .leftColumn {
@@ -166,7 +153,6 @@ button:focus-visible {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 }
 
-
 .overview {
   display: flex;
   flex-wrap: wrap;
@@ -178,6 +164,8 @@ button:focus-visible {
   padding: 2rem;
   text-align: center;
 }
+
+
 
 .host {
   display: flex;
@@ -191,17 +179,6 @@ button:focus-visible {
   text-align: center;
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
-}
 
 .amenities {
   box-sizing: border-box;
@@ -216,6 +193,7 @@ button:focus-visible {
   padding-bottom: 48px;
   padding-top: 48px;
   -webkit-font-smoothing: antialiased;
+
 }
 
 .calendar {
@@ -287,31 +265,4 @@ button:focus-visible {
   padding: 0.8em 1.2em;
   background-color: #fbf9f9;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
-}
-
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  align-items: flex-start;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  color: #222222;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-.aboutTitle {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  font-size: 22px;
-  padding-bottom: 0%;
-  margin: 0%;
-  padding-bottom: 16px;
-}
-
-.aboutShowMore {
-  margin-top: 16px;
 }

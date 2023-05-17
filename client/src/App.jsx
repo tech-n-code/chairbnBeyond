@@ -1,5 +1,6 @@
-import { useState } from "react";
-import Amenities from "./components/amenities/amenities";
+
+import Amenities from "./components/Body/Amenities/Amenities";
+
 import "./index.css";
 
 import Map from "./components/Map/Map.jsx"
@@ -12,8 +13,6 @@ import Gallery from "./components/gallery/Gallery"
 
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <header className="header">
