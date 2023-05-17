@@ -17,7 +17,8 @@ CREATE TABLE users (
     fname text NOT NULL,
     lname text NOT NULL,
     email text NOT NULL UNIQUE,
-    password TEXT NOT NULL
+    password TEXT NOT NULL,
+    photo_url text
 );
 
 CREATE TABLE hosts(
@@ -144,10 +145,12 @@ INSERT INTO amenities (amenity, typeId) VALUES ('Smoking allowed', 1);
 INSERT INTO amenities (amenity, typeId) VALUES ('Events allowed', 1);
 INSERT INTO amenities (amenity, typeId) VALUES ('Long term stays allowed', 1);
 
-INSERT INTO users(fname, lname, email, password) VALUES ('John', 'Doe', 'john.doe@gmail.com', 'password');
-INSERT INTO users(fname, lname, email, password) VALUES ('Jane', 'Doe', 'jane.doe@gmail.com', 'password');
-INSERT INTO users(fname, lname, email, password) VALUES ('John', 'Smith', 'john.smith@gmail.com', 'password');
-INSERT INTO users(fname, lname, email, password) VALUES ('Jane', 'Smith', 'jane.smith@gmail.com', 'password');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Doe', 'john.doe@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/cd1c0777-f3b3-40a3-8dab-c96a5cd2efef.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Doe', 'jane.doe@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/c53ca4c0-af8f-4ba0-b82c-9711efc1cc68.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Smith', 'john.smith@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/e2d7271a-8691-41c3-931f-dc6592e12eb0.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Smith', 'jane.smith@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/cc795c01-e0a1-4ac4-849c-85c2ca70afee.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Johnson', 'john.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/b4a23251-d713-468d-840b-4081b9e6c615.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Johnson', 'jane.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/de6eac7b-3b86-4e63-8841-a44296af3446.jpg?im_w=240');
 
 INSERT INTO hosts(userId, about) VALUES (1, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (2, 'I am a host');
