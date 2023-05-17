@@ -6,6 +6,7 @@ function NavBar() {
     <div className={styles["NavBar"]}>
       <div className={styles["logo"]}>
         <img className={styles["chairbnbLogo"]} src="../src/assets/chairbnbLogo.jpg" alt="chairbnb Logo" />
+        <div className={styles["chairbnb"]}>chairbnb</div>
       </div>
       <div className={styles["searchButtonContainer"]}>
         <button className={styles["searchBarButton"]}>
