@@ -16,11 +16,55 @@
 }
 
 .reservationDetails {
-    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
 }
+
+.checkIn {
+    padding: 15px;
+    width: 50%;
+
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.checkOut {
+    padding: 15px;
+    width: 50%;
+
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.guests {
+    padding: 15px;
+    width: 100%;
+    background-color: #ff385c;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+
 
 .reserveButton {
     padding: 10px;
+    text-align: center;
+}
+
+.reserve {
+    padding: 15px;
+    width: 100%;
+    background-color: #ff385c;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
 }
 
 p {
