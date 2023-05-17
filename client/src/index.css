@@ -105,6 +105,12 @@ button:focus-visible {
   max-width: none;
 } */
 
+.columnsContainer {
+  margin: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
 .titlebar {
   align-items: stretch;
   box-sizing: border-box;
