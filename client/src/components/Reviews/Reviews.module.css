@@ -1,4 +1,4 @@
-.reviews-section {
+.reviews-component {
   box-sizing: border-box;
   color: rgb(34, 34, 34);
   display: block;
@@ -11,7 +11,7 @@
   line-height: 20px;
   margin-top: 20px;
   margin-left: -10px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   text-size-adjust: 100%;
   width: 1324px;
   -webkit-font-smoothing: antialiased;
@@ -138,9 +138,11 @@
     sans-serif;
   font-size: 16px;
   font-weight: 400;
-  height: 838px;
+  height: auto;
   line-break: strict;
   line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-size-adjust: 100%;
   width: 1120px;
   -webkit-font-smoothing: antialiased;
@@ -581,8 +583,9 @@
   justify-content: flex-start;
   line-break: strict;
   line-height: 20px;
-  margin-left: -8px;
+  margin-left: -18px;
   margin-right: -8px;
+  margin-top: 20px;
   width: 1136px;
   -webkit-font-smoothing: antialiased;
 }
@@ -1001,33 +1004,130 @@
 }
 
 .review-span-1 {
-    box-sizing: border-box;
-    color: rgb(34, 34, 34);
-    display: inline;
-    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-      sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    height: auto;
-    line-break: strict;
-    line-height: 24px;
-    text-size-adjust: 100%;
-    width: auto;
-    -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: inline;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 24px;
+  text-size-adjust: 100%;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 .review-span-2 {
-    box-sizing: border-box;
-    color: rgb(34, 34, 34);
-    display: inline;
-    font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-      sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    height: auto;
-    line-break: strict;
-    line-height: 24px;
-    text-size-adjust: 100%;
-    width: auto;
-    -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: inline;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 24px;
+  text-size-adjust: 100%;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.reviews-button-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 48px;
+  line-break: strict;
+  line-height: 20px;
+  margin-top: -100px;
+  margin-bottom: 10px;
+  text-size-adjust: 100%;
+  width: 1120px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.reviews-button {
+  align-items: flex-start;
+  appearance: button;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variation-settings: normal;
+  font-weight: 600;
+  height: 48px;
+  letter-spacing: normal;
+  line-break: strict;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  outline-color: rgb(34, 34, 34);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 13px;
+  padding-left: 23px;
+  padding-top: 13px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(34, 34, 34);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  touch-action: manipulation;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.2s, 0.1s;
+  transition-property: box-shadow, transform;
+  transition-timing-function: ease, ease;
+  width: 183.078px;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  -webkit-font-smoothing: antialiased;
 }

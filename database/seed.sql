@@ -187,4 +187,6 @@ INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 1, 'This place
 INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 2, 'This place was great!', 5);
 INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 3, 'This place was great!', 5);
 INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 4, 'This place was great!', 5);
+INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 3, 'This place was great!', 5);
+INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 4, 'This place was great!', 5);
 
