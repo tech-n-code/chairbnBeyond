@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Amenities.module.css";
-import Modal from "../Modal/Modal.jsx";
+import Modal from "./Modal/Modal.jsx";
 
 function Amenities() {
   const [amenities, setAmenities] = useState([]);
