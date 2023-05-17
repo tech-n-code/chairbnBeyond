@@ -56,18 +56,6 @@
   text-align: center;
 }
 
-.reviews {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
-}
-
 .footer {
   display: flex;
   width: 100%;

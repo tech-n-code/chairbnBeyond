@@ -7,6 +7,7 @@ import ChairCover from "./ChairCover/ChairCover";
 
 import AboutThisPlace from "./AboutThisPlace/AboutThisPlace";
 import Amenities from "./Amenities/Amenities";
+import Reviews from "./Reviews/Reviews";
 import Reservation from "./Reservation/Reservation";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
@@ -30,7 +31,7 @@ function Body() {
             <Reservation className={styles["reservation"]}/>
           </div>
         </div>
-        <div className="reviews">Reviews Component</div>
+        <Reviews />
         <Map />
         <ThingsToKnow className="things" />
       </div>
