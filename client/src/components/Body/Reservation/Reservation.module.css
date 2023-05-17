@@ -16,38 +16,47 @@
 }
 
 .reservationDetails {
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 8px;
 }
 
 .checkIn {
     padding: 15px;
     width: 50%;
-
-    border-radius: 8px;
+    background-color: transparent;
     border: none;
-    color: white;
-    font-weight: 600;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
 }
 
 .checkOut {
     padding: 15px;
     width: 50%;
-
-    border-radius: 8px;
-    border: none;
-    color: white;
-    font-weight: 600;
+    background-color: transparent;
+    border-left: 1px solid gray;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
 }
 
 .guests {
     padding: 15px;
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    color: black;
+    font-weight: 500;
     width: 100%;
-    background-color: #ff385c;
-    border-radius: 8px;
-    border: none;
-    color: white;
-    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
 }
 
 
@@ -94,4 +103,11 @@ p {
     justify-content: space-between;
     padding: 10px;
     font-weight: 600;
+    padding-top: 20px;
 }
+
+.costBreakdown {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+

@@ -10,10 +10,10 @@ function Reservation() {
         </div>
         <div className={styles["reservationDetails"]}>
           <div className={styles["checkInOut"]}>
-            <button className={styles["checkIn"]}>checkin</button>
-            <button className={styles["checkOut"]}>checkout</button>
+            <button className={styles["checkIn"]}>CHECK-IN</button>
+            <button className={styles["checkOut"]}>CHECK-OUT</button>
           </div>
-          <button className={styles["guests"]}>guests</button>
+          <button className={styles["guests"]}>GUESTS</button>
         </div>
         <div className={styles["reserveButton"]}>
           <button className={styles["reserve"]}>Reserve</button>
