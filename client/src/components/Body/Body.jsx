@@ -7,10 +7,11 @@ import ChairCover from "./ChairCover/ChairCover";
 
 import AboutThisPlace from "./AboutThisPlace/AboutThisPlace";
 import Amenities from "./Amenities/Amenities";
-
-import Calendar from "./Calendar/Calendar";
+import Reviews from "./Reviews/Reviews";
+import Reservation from "./Reservation/Reservation";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
+import Calendar from "./Calendar/Calendar";
 
 
 function Body() {
@@ -20,27 +21,19 @@ function Body() {
         <div className="titlebar">Property Title</div>
         <Gallery />
         <div className={styles["body-after-gallery-container"]}>
-          <div className={styles["body-column-container"]}>
-            <div className={styles["body-left-column-container"]}>
-              <div className={styles["body-column-left-div"]}>
-                <div className="overview">Property Overview Component</div>
-                <ChairCover />
-                <div className="host">Host Component</div>
-                <AboutThisPlace />
-                <Amenities />
-                <Calendar />
-              </div>
-            </div>
-            <div className={styles["body-right-column-container"]}>
-              <div className={styles["body-column-right-conatiner-div"]}>
-                <div className={styles["body-column-right-div"]}>
-                  <div className="reservation">Reservation Component</div>
-                </div>
-              </div>
-            </div>
+          <div className={styles["body-left-column-container"]}>
+            <div className="overview">Property Overview Component</div>
+            <ChairCover />
+            <div className="host">Host Component</div>
+            <AboutThisPlace />
+            <Amenities />
+            <Calendar />
+          </div>
+          <div className={styles["body-right-column-container"]}>
+            <Reservation className={styles["reservation"]}/>
           </div>
         </div>
-        <div className="reviews">Reviews Component</div>
+        <Reviews />
         <Map />
         <ThingsToKnow className="things" />
       </div>
