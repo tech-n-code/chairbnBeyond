@@ -12,7 +12,7 @@ export default function Calendar() {
               <div className={styles["nights-location-container"]}>
                 <section className={styles["nights-location-section"]}>
                   <h2 className={styles["nights-location-text"]}>
-                    5 nights in Aruba
+                    5 nights in Minot
                   </h2>
                 </section>
               </div>
