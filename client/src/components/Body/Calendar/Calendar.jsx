@@ -53,7 +53,25 @@ export default function Calendar() {
                               </ul>
                             </div>
                           </div>
-                          <div className={styles["calendars-container-8"]}></div>
+                          <div className={styles["calendars-container-8"]}>
+                            <div className={styles["arrow-container"]}>
+                              <div className={styles["prev-arrow-container"]}>
+                                <button className={styles["prev-arrow-button"]}>
+                                  <span className={styles["prev-arrow-span"]}>&lt;</span>
+                                </button>
+                              </div>
+                              <div className={styles["next-arrow-container"]}>
+                                <button className={styles["next-arrow-button"]}>
+                                  <span className={styles["next-arrow-span"]}>&gt;</span>
+                                </button>
+                              </div>
+                              <div className={styles["next-arrow-container"]}></div>
+                            </div>
+
+
+
+                            <div className={styles["calendar-lean-section"]}></div>
+                          </div>
                         </div>
                       </div>
                     </div>
