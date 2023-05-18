@@ -1,4 +1,5 @@
 import styles from "./Reservation.module.css";
+import Guests from "./Guests/Guests";
 
 function Reservation() {
   return (
@@ -13,7 +14,8 @@ function Reservation() {
             <button className={styles["checkIn"]}>CHECK-IN</button>
             <button className={styles["checkOut"]}>CHECK-OUT</button>
           </div>
-          <button className={styles["guests"]}>GUESTS</button>
+          {/* <button className={styles["guests"]}>GUESTS</button> */}
+          <Guests />
         </div>
         <div className={styles["reserveButton"]}>
           <button className={styles["reserve"]}>Reserve</button>
