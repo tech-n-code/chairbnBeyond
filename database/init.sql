@@ -45,16 +45,6 @@ CREATE TABLE listing_photos(
     FOREIGN KEY (listingId) REFERENCES listings(id)
 );
 
-CREATE TABLE reviews (
-    id serial PRIMARY KEY,
-    listingId integer NOT NULL,
-    userId integer NOT NULL,
-    rating integer NOT NULL,
-    review text,
-    FOREIGN KEY (userId) REFERENCES users(id),
-    FOREIGN KEY (listingId) REFERENCES listings(id)
-);
-
 CREATE TABLE bookings (
     id serial PRIMARY KEY,
     listingId integer NOT NULL,
@@ -64,6 +54,24 @@ CREATE TABLE bookings (
     numGuests integer NOT NULL,
     FOREIGN KEY (userId) REFERENCES users(id),
     FOREIGN KEY (listingId) REFERENCES listings(id)
+);
+
+CREATE TABLE reviews (
+    id serial PRIMARY KEY,
+    listingId integer NOT NULL,
+    userId integer NOT NULL,
+    rating integer NOT NULL,
+    cleanliness integer NOT NULL,
+    communication integer NOT NULL,
+    checkin integer NOT NULL,
+    accuracy integer NOT NULL,
+    location integer NOT NULL,
+    value integer NOT NULL,
+    review text,
+    bookingId integer NOT NULL,
+    FOREIGN KEY (userId) REFERENCES users(id),
+    FOREIGN KEY (listingId) REFERENCES listings(id),
+    FOREIGN KEY (bookingId) REFERENCES bookings(id)
 );
 
 CREATE TABLE amenity_types(
@@ -152,7 +160,7 @@ INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Smi
 INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Johnson', 'john.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/b4a23251-d713-468d-840b-4081b9e6c615.jpg?im_w=240');
 INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Johnson', 'jane.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/de6eac7b-3b86-4e63-8841-a44296af3446.jpg?im_w=240');
 
-INSERT INTO hosts(userId, about) VALUES (1, 'I am a host');
+INSERT INTO hosts(userId, about) VALUES (1, 'Why not Minot. Freezins the reason.');
 INSERT INTO hosts(userId, about) VALUES (2, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (3, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (4, 'I am a host');
@@ -273,9 +281,23 @@ INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 19);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 20);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 21);
 
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 1, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 2, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 3, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 4, 'This place was great!', 5);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 1, '2018-01-01', '2018-01-03', 2);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 2, '2018-02-05', '2018-02-09', 1);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 3, '2018-03-07', '2018-03-12', 3);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 4, '2018-04-01', '2018-04-05', 4);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 5, '2018-05-01', '2018-05-03', 2);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 6, '2018-06-01', '2018-06-03', 2);
 
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value, bookingId) VALUES (1, 1, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 1);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 2, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 2);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 3, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 3);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 4, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 4);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 5, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 5);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 6, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 6);
+
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://na.rdcpix.com/625946635/a545dc497c1d4e1385851ca5e12f5a14w-c0rd-w832_h468_r4_q80.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://cdn.abcotvs.com/dip/images/895569_073115-cc-Breaking-Bad-Jesse-3.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://i.ytimg.com/vi/ZkuUC995PSw/maxresdefault.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPZkX8EqX-UGLOK2yVqvSgDGvNBdOsPFmgA&usqp=CAU');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://apriljulia.files.wordpress.com/2012/12/screen-shot-2013-06-07-at-9-37-47-pm.png');
 
