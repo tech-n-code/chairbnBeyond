@@ -548,6 +548,9 @@
   height: 600px;
   line-break: strict;
   line-height: 20px;
+
+  position: relative;
+  
   text-size-adjust: 100%;
   width: 1120px;
   -webkit-font-smoothing: antialiased;
@@ -556,7 +559,11 @@
 .reviews-section-container {
   box-sizing: border-box;
   color: rgb(34, 34, 34);
-  display: block;
+  /* display: block; */
+
+  display: flex;
+  flex-wrap: wrap;
+  
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
     sans-serif;
   font-size: 16px;
@@ -606,9 +613,18 @@
   padding-left: 8px;
   padding-right: 8px;
   position: relative;
-  width: 473.328px;
+  
+  /* width: 473.328px; */
+  width: 33%;
+
   -webkit-font-smoothing: antialiased;
 }
+
+/* @media (max-width: 1000px) {
+  .individual-review-container-1 {
+    width: 100%;
+  }
+} */
 
 .individual-review-container-2 {
   box-sizing: border-box;
@@ -1048,6 +1064,12 @@
   line-height: 20px;
   margin-top: -100px;
   margin-bottom: 10px;
+
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  margin-top: 20px;
+
   text-size-adjust: 100%;
   width: 1120px;
   -webkit-font-smoothing: antialiased;
