@@ -25,15 +25,15 @@ function Reservation() {
         </div>
         <div className={styles["costBreakdown"]}>
           <div className={styles["roomFee"]}>
-            <div>$55 x 5 nights</div>
+            <u>$55 x 5 nights</u>
             <div>$274</div>
           </div>
           <div className={styles["cleaningFee"]}>
-            <div>Cleaning fee</div>
+            <u>Cleaning fee</u>
             <div>$14</div>
           </div>
           <div className={styles["serviceFee"]}>
-            <div>Chairbnb service fee</div>
+            <u>Chairbnb service fee</u>
             <div>$41</div>
           </div>
         </div>
