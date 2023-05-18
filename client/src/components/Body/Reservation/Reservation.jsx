@@ -6,7 +6,7 @@ function Reservation() {
       <div className={styles["reservation"]}>
         <div className={styles["reservationTitle"]}>
           <div>Rate/night</div>
-          <div>stars/reviews</div>
+          <div className={styles["reviews"]}>stars/reviews</div>
         </div>
         <div className={styles["reservationDetails"]}>
           <div className={styles["checkInOut"]}>
