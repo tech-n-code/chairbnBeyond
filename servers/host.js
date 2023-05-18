@@ -54,8 +54,18 @@ app.get("/api/hosts/about/:userId", (req, res) => {
       res.json(result.rows);
     });
   });
-//
+//get host profile pic
+app.get("/api/hosts/photo/:id", (req, res) => {
+  const id = req.params.id;
 
+  pool.query(`SELECT photo_url FROM users WHERE id = ${id}`, (err, result) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send("Error retrieving host photo url from database");
+    }
+    res.json(result.rows[0]);
+  });
+});
 
 // app.get("/api/location/description", (req, res) => {
 //   pool.query("SELECT description FROM listings", (err, result) => {
