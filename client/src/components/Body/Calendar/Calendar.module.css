@@ -15,6 +15,23 @@
   border: 2px solid red;
 }
 
+.calendar-component::before {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  content: "";
+  display: flex;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 0px;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 .group-section {
   box-sizing: border-box;
   color: rgb(34, 34, 34);
@@ -533,7 +550,7 @@
   cursor: pointer;
   display: inline-block;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
@@ -591,7 +608,7 @@
   cursor: pointer;
   display: block;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
@@ -632,7 +649,7 @@
   cursor: pointer;
   display: inline;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
@@ -722,7 +739,7 @@
   cursor: pointer;
   display: inline-block;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
@@ -780,7 +797,7 @@
   cursor: pointer;
   display: block;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
@@ -821,7 +838,7 @@
   cursor: pointer;
   display: inline;
   font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
-  sans-serif;
+    sans-serif;
   font-feature-settings: normal;
   font-kerning: auto;
   font-optical-sizing: auto;
@@ -849,6 +866,64 @@
   width: auto;
   word-spacing: 0px;
   writing-mode: horizontal-tb;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.calendar-lean-section {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 325px;
+  line-break: strict;
+  line-height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  text-align: left;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: height;
+  transition-timing-function: ease-in-out;
+  width: 674px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.calendar-wide-section {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  left: 9px;
+  line-break: strict;
+  line-height: 20px;
+  position: absolute;
+  text-align: left;
+  text-size-adjust: 100%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 1312px;
+  z-index: 0;
   -webkit-box-direction: normal;
   -webkit-font-smoothing: antialiased;
 }

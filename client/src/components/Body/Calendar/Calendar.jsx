@@ -57,20 +57,30 @@ export default function Calendar() {
                             <div className={styles["arrow-container"]}>
                               <div className={styles["prev-arrow-container"]}>
                                 <button className={styles["prev-arrow-button"]}>
-                                  <span className={styles["prev-arrow-span"]}>&lt;</span>
+                                  <span className={styles["prev-arrow-span"]}>
+                                    &lt;
+                                  </span>
                                 </button>
                               </div>
                               <div className={styles["next-arrow-container"]}>
                                 <button className={styles["next-arrow-button"]}>
-                                  <span className={styles["next-arrow-span"]}>&gt;</span>
+                                  <span className={styles["next-arrow-span"]}>
+                                    &gt;
+                                  </span>
                                 </button>
                               </div>
-                              <div className={styles["next-arrow-container"]}></div>
+                              <div
+                                className={styles["next-arrow-container"]}
+                              ></div>
                             </div>
-
-
-
-                            <div className={styles["calendar-lean-section"]}></div>
+                            <div className={styles["calendar-lean-section"]}>
+                              <div className={styles["calendar-wide-section"]}>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
