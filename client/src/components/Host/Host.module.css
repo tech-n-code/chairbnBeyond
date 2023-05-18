@@ -1,13 +1,14 @@
 .userContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align elements to the left */
-  gap: 1rem; /* Add vertical spacing between elements */
+  align-items: flex-start;
+  gap: 1rem;
+  min-width: 400px;
 }
 
 .userHeader {
   display: flex;
-  align-items: flex-start; /* Align elements to the left */
+  align-items: flex-start;
 }
 
 .userPicture {
@@ -25,7 +26,6 @@
 }
 
 .userHeader p {
-  /* font-size: smaller; */
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   color: #888;
@@ -35,12 +35,24 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  align-items: flex-start; /* Align elements to the left */
+  align-items: flex-start;
 }
 
 .numbReviews h3 {
   margin: 0;
-  font-weight: 300; /* Adjust font weight as needed */
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.numbReviews h3:nth-child(2) {
+  flex: 1;
+}
+
+.checkIconText {
+  margin-left: 0.5rem;
+
 }
 
 .superHost h3 {
@@ -50,11 +62,11 @@
 }
 
 .aboutHost {
-  align-self: flex-start; /* Align element to the left */
+  align-self: flex-start;
 }
 
 .superHost p {
-  margin: 0; /* Reset margin to remove extra spacing */
+  margin: 0;
 }
 
 .superHost {
@@ -63,10 +75,57 @@
 }
 
 .superHostDesc {
-  /* white-space: nowrap; Prevent text from wrapping */
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 p {
-  margin: 0; /* Reset margin to remove extra spacing */
+  margin: 0;
+}
+
+.starIcon {
+  color: black;
+  margin-right: 0.5rem;
+}
+
+.medalIcon {
+  font-size: 1rem; /* Adjust the size as needed */
+  margin-right: 0.5rem; /* Add space to the right of the icon */
+}
+
+.checkIcon{
+  font-size: 1rem;
+}
+
+.contactButton {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 150px;
+  height: 48px;
+}
+
+.contactSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactButton {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: black;
+  padding: 8px 16px;
 }
