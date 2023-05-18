@@ -28,14 +28,21 @@ CREATE TABLE hosts(
     FOREIGN KEY (userId) REFERENCES users(id)
 );
 
+CREATE TABLE locations(
+    id serial PRIMARY KEY,
+    latitude float NOT NULL,
+    longitude float NOT NULL
+);
+
 CREATE TABLE listings (
     id serial PRIMARY KEY,
     title text,
     description text,
     price integer,
-    location text,
+    locationid integer NOT NULL,
     hostId integer NOT NULL,
-    FOREIGN KEY (hostId) REFERENCES hosts(id)
+    FOREIGN KEY (hostId) REFERENCES hosts(id),
+    FOREIGN KEY (locationid) REFERENCES locations(id)
 );
 
 CREATE TABLE listing_photos(
@@ -93,6 +100,11 @@ CREATE TABLE listing_amenities(
     FOREIGN KEY (listingId) REFERENCES listings(id),
     FOREIGN KEY (amenityId) REFERENCES amenities(id)
 );
+
+INSERT INTO locations (latitude, longitude) VALUES (48.230164, -101.291199);
+INSERT INTO locations (latitude, longitude) VALUES (40.7128, -74.0060);
+INSERT INTO locations (latitude, longitude) VALUES (35.6895, 139.6917);
+INSERT INTO locations (latitude, longitude) VALUES (51.5074, -0.1278);
 
 INSERT INTO amenity_types (amenity_type) VALUES ('Not Included');
 INSERT INTO amenity_types (amenity_type) VALUES ('Services');
@@ -153,22 +165,22 @@ INSERT INTO amenities (amenity, typeId) VALUES ('Smoking allowed', 1);
 INSERT INTO amenities (amenity, typeId) VALUES ('Events allowed', 1);
 INSERT INTO amenities (amenity, typeId) VALUES ('Long term stays allowed', 1);
 
-INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Doe', 'john.doe@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/cd1c0777-f3b3-40a3-8dab-c96a5cd2efef.jpg?im_w=240');
-INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Doe', 'jane.doe@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/c53ca4c0-af8f-4ba0-b82c-9711efc1cc68.jpg?im_w=240');
-INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Smith', 'john.smith@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/e2d7271a-8691-41c3-931f-dc6592e12eb0.jpg?im_w=240');
-INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Smith', 'jane.smith@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/cc795c01-e0a1-4ac4-849c-85c2ca70afee.jpg?im_w=240');
-INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Johnson', 'john.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/b4a23251-d713-468d-840b-4081b9e6c615.jpg?im_w=240');
-INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Johnson', 'jane.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/de6eac7b-3b86-4e63-8841-a44296af3446.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Archibald', 'McTickleberry', 'bartholomew.mctickleberry@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/cd1c0777-f3b3-40a3-8dab-c96a5cd2efef.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Hortense', 'Wigglesworth', 'hortense.wigglesworth@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/c53ca4c0-af8f-4ba0-b82c-9711efc1cc68.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Cornelius', 'Snickerwhiskers', 'cornelius.snickerwhiskers@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/e2d7271a-8691-41c3-931f-dc6592e12eb0.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Prudence', 'Bumbleberry', 'prudence.bumbleberry@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/cc795c01-e0a1-4ac4-849c-85c2ca70afee.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Gertrude', 'Wobblepants', 'archibald.wobblepants@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/b4a23251-d713-468d-840b-4081b9e6c615.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Clementine', 'Fluffernutter', 'clementine.fluffernutter@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/de6eac7b-3b86-4e63-8841-a44296af3446.jpg?im_w=240');
 
 INSERT INTO hosts(userId, about) VALUES (1, 'Why not Minot. Freezins the reason.');
 INSERT INTO hosts(userId, about) VALUES (2, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (3, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (4, 'I am a host');
 
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 1', 'Description 1', 100, 'Location 1', 1);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 2', 'Description 2', 200, 'Location 2', 2);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 3', 'Description 3', 300, 'Location 3', 3);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 4', 'Description 4', 400, 'Location 4', 4);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 1', 'Description 1', 100, 1, 1);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 2', 'Description 2', 200, 2, 2);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 3', 'Description 3', 300, 3, 3);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 4', 'Description 4', 400, 4, 4);
 
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (1, 1);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (1, 2);
@@ -288,12 +300,12 @@ INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1
 INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 5, '2018-05-01', '2018-05-03', 2);
 INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 6, '2018-06-01', '2018-06-03', 2);
 
-INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value, bookingId) VALUES (1, 1, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 1);
-INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 2, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 2);
-INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 3, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 3);
-INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 4, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 4);
-INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 5, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 5);
-INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 6, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 6);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value, bookingId) VALUES (1, 1, 'This Minot Chairbnb was almost perfect, but I could not find the remote control to pause the beautiful North Dakota sunset. Please send a pause button ASAP!', 4, 5, 5, 5, 5, 5,5, 1);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 2, 'Everything about this Chairbnb was fantastic, except for the lack of a time machine. I did not want my North Dakota adventure to end!', 5, 5, 5, 5, 5, 5,5, 2);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 3, 'I had a fantastic time at this Chairbnb, but my GPS got so confused by the sheer vastness of North Dakota that it started suggesting detours to the moon. Lost but entertained!', 5, 5, 5, 5, 5, 5,5, 3);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 4, 'This Minot Chairbnb should come with a warning: you will be smiling so much your face might get stuck in a permanent grin. Best risk I have ever taken!', 5, 5, 5, 5, 5, 5,5, 4);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 5, 'Who needs a theme park when you have this Chairbnb in Minot? The rollercoaster ride of comfort and laughter was simply unbeatable!', 5, 5, 5, 5, 5, 5,5, 5);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 6, 'This should come with a warning sign: "Caution! Excessive comfort and delightful hospitality may cause severe addiction to the charm of North Dakota." Proceed at your own risk!', 5, 5, 5, 5, 5, 5,5, 6);
 
 INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://na.rdcpix.com/625946635/a545dc497c1d4e1385851ca5e12f5a14w-c0rd-w832_h468_r4_q80.jpg');
 INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://cdn.abcotvs.com/dip/images/895569_073115-cc-Breaking-Bad-Jesse-3.jpg');
