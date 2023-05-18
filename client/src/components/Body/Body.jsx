@@ -11,6 +11,7 @@ import Reviews from "./Reviews/Reviews";
 import Reservation from "./Reservation/Reservation";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
+import PropertyOverview from "./PropertyOverview/PropertyOverview";
 
 function Body() {
   return (
@@ -20,7 +21,8 @@ function Body() {
         <Gallery />
         <div className={styles["body-after-gallery-container"]}>
           <div className={styles["body-left-column-container"]}>
-            <div className="overview">Property Overview Component</div>
+            <div className="overview"></div>
+            <PropertyOverview />
             <ChairCover />
             <div className="host">Host Component</div>
             <AboutThisPlace />
