@@ -1,4 +1,4 @@
-import styles from "./propertyOverview.module.css";
+import styles from "./PropertyOverview.module.css";
 
 function PropertyOverview() {
 
