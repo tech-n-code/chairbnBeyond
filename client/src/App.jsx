@@ -1,14 +1,23 @@
 import "./index.css";
-import Header from "./components/Header/Header";
-import Body from "./components/Body/Body";
-import Footer from "./components/Footer/Footer";
+import Page from "./components/Page";
+import {
+  Route,
+  createRoutesFromElements,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
+  const routeDefinitions = createRoutesFromElements(
+    <Route>
+      <Route path="/:listingId" element={<Page />} />
+    </Route>
+  );
+
+  const router = createBrowserRouter(routeDefinitions);
   return (
     <>
-      <Header />
-      <Body />
-      <Footer />
+      <RouterProvider router={router} />
     </>
   );
 }
