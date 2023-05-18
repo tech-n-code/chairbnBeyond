@@ -160,7 +160,7 @@ INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Smi
 INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Johnson', 'john.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/b4a23251-d713-468d-840b-4081b9e6c615.jpg?im_w=240');
 INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Johnson', 'jane.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/de6eac7b-3b86-4e63-8841-a44296af3446.jpg?im_w=240');
 
-INSERT INTO hosts(userId, about) VALUES (1, 'I am a host');
+INSERT INTO hosts(userId, about) VALUES (1, 'Why not Minot. Freezins the reason.');
 INSERT INTO hosts(userId, about) VALUES (2, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (3, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (4, 'I am a host');
@@ -295,4 +295,9 @@ INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communicatio
 INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 5, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 5);
 INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 6, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 6);
 
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://na.rdcpix.com/625946635/a545dc497c1d4e1385851ca5e12f5a14w-c0rd-w832_h468_r4_q80.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://cdn.abcotvs.com/dip/images/895569_073115-cc-Breaking-Bad-Jesse-3.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://i.ytimg.com/vi/ZkuUC995PSw/maxresdefault.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPZkX8EqX-UGLOK2yVqvSgDGvNBdOsPFmgA&usqp=CAU');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://apriljulia.files.wordpress.com/2012/12/screen-shot-2013-06-07-at-9-37-47-pm.png');
 
