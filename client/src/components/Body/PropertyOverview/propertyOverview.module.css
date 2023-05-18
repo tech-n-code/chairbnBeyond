@@ -1,9 +1,8 @@
 .propertyOverview {
-    margin-left: 34%;
+    /* margin-left: 34%; */
+    margin: 0;
     display: flex;
 }
-
-
 
 .hostedBy {
     font-size: 23px;
@@ -17,6 +16,8 @@
     padding-top: 10px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
     /* padding-right: 40px; */
 }
 
@@ -37,6 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 3;
     width: 220px; 
     height: 55px; 
     border: 1px solid grey;

@@ -22,7 +22,6 @@ function Body(props) {
         <Gallery />
         <div className={styles["body-after-gallery-container"]}>
           <div className={styles["body-left-column-container"]}>
-            <div className="overview"></div>
             <PropertyOverview />
             <ChairCover />
             <HostInfo />
