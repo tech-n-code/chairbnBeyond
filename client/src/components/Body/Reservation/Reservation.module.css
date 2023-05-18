@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 
-.guests {
+/* .guests {
     padding: 15px;
     background-color: transparent;
     border-top: 1px solid gray;
@@ -64,9 +64,7 @@
     font-size: 12px;
     text-align: left;
     cursor: pointer;
-}
-
-
+} */
 
 .reserveButton {
     padding: 10px;
@@ -119,3 +117,6 @@ p {
     padding-bottom: 10px;
 }
 
+u {
+    cursor: pointer;
+}
