@@ -21,6 +21,7 @@ GET http://localhost:3050/api/about/2
 ###Get images to display in gallery
 GET http://localhost:3010/api/gallery
 
+
 ###Get users first and last name 
 GET http://localhost:4001/api/users/1
 
@@ -29,3 +30,4 @@ GET http://localhost:4001/api/hosts/about/1
 
 ###Get reviews
 GET http://localhost:3005/api/reviews
+
