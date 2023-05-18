@@ -5,10 +5,10 @@
     flex-direction: column;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     align-items: flex-start;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
     max-width: 1280px;
-    padding: 2rem;
+    padding: 10px;
     color: #222222;
   }
   
