@@ -45,16 +45,6 @@ CREATE TABLE listing_photos(
     FOREIGN KEY (listingId) REFERENCES listings(id)
 );
 
-CREATE TABLE reviews (
-    id serial PRIMARY KEY,
-    listingId integer NOT NULL,
-    userId integer NOT NULL,
-    rating integer NOT NULL,
-    review text,
-    FOREIGN KEY (userId) REFERENCES users(id),
-    FOREIGN KEY (listingId) REFERENCES listings(id)
-);
-
 CREATE TABLE bookings (
     id serial PRIMARY KEY,
     listingId integer NOT NULL,
@@ -64,6 +54,24 @@ CREATE TABLE bookings (
     numGuests integer NOT NULL,
     FOREIGN KEY (userId) REFERENCES users(id),
     FOREIGN KEY (listingId) REFERENCES listings(id)
+);
+
+CREATE TABLE reviews (
+    id serial PRIMARY KEY,
+    listingId integer NOT NULL,
+    userId integer NOT NULL,
+    rating integer NOT NULL,
+    cleanliness integer NOT NULL,
+    communication integer NOT NULL,
+    checkin integer NOT NULL,
+    accuracy integer NOT NULL,
+    location integer NOT NULL,
+    value integer NOT NULL,
+    review text,
+    bookingId integer NOT NULL,
+    FOREIGN KEY (userId) REFERENCES users(id),
+    FOREIGN KEY (listingId) REFERENCES listings(id),
+    FOREIGN KEY (bookingId) REFERENCES bookings(id)
 );
 
 CREATE TABLE amenity_types(
@@ -273,9 +281,18 @@ INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 19);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 20);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 21);
 
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 1, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 2, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 3, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 4, 'This place was great!', 5);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 1, '2018-01-01', '2018-01-03', 2);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 2, '2018-02-05', '2018-02-09', 1);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 3, '2018-03-07', '2018-03-12', 3);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 4, '2018-04-01', '2018-04-05', 4);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 5, '2018-05-01', '2018-05-03', 2);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 6, '2018-06-01', '2018-06-03', 2);
+
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value, bookingId) VALUES (1, 1, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 1);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 2, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 2);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 3, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 3);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 4, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 4);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 5, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 5);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 6, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 6);
 
 
