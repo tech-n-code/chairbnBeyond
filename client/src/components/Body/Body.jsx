@@ -13,7 +13,7 @@ import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
 import HostInfo from "./Host/Host";
 
-function Body() {
+function Body(props) {
   return (
     <>
       <div className={styles["body-container"]}>
@@ -25,11 +25,11 @@ function Body() {
             <ChairCover />
             <HostInfo />
             <AboutThisPlace />
-            <Amenities />
+            <Amenities listingId={props.listingId} />
             <div className="calendar">Calendar Component</div>
           </div>
           <div className={styles["body-right-column-container"]}>
-            <Reservation className={styles["reservation"]}/>
+            <Reservation className={styles["reservation"]} />
           </div>
         </div>
         <Reviews />

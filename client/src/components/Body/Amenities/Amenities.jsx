@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import styles from "./Amenities.module.css";
 import Modal from "./Modal/Modal.jsx";
+import { useParams } from "react-router-dom";
 
-function Amenities() {
+function Amenities(props) {
   const [amenities, setAmenities] = useState([]);
   const [tenAmenities, setTenAmenities] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  //const listingId = props.listingId;
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -15,7 +17,7 @@ function Amenities() {
     setIsModalOpen(false);
   };
   useEffect(() => {
-    fetch("http://localhost:3002/api/amenities/1")
+    fetch(`http://localhost:3002/api/amenities/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
         setAmenities(data);
@@ -25,9 +27,9 @@ function Amenities() {
         console.error("Error fetching amenities: ", err);
       })
       .then(
-        fetch("http://localhost:3002/api/amenities/ten/1").then((res) =>
-          res.json().then((data) => setTenAmenities(data))
-        )
+        fetch(
+          `http://localhost:3002/api/amenities/ten/${props.listingId}`
+        ).then((res) => res.json().then((data) => setTenAmenities(data)))
       );
   }, []);
   return (
