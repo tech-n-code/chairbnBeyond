@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
 import styles from "./Map.module.css";
 
-function Map() {
+function Map(props) {
   const [location, setLocation] = useState({
     latitude: 0,
     longitude: 0
@@ -15,7 +15,7 @@ function Map() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/location/1")
+    fetch(`http://localhost:4000/api/location/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
         setLocation(data);
@@ -126,7 +126,7 @@ function Map() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/location/description/1")
+    fetch(`http://localhost:4000/api/location/description/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
         setDescription(data.description);

@@ -33,7 +33,7 @@ function Body(props) {
           </div>
         </div>
         <Reviews />
-        <Map />
+        <Map listingId={props.listingId}/>
         <ThingsToKnow className="things" />
       </div>
     </>
