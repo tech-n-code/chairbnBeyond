@@ -184,10 +184,12 @@
     "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  height: auto;
   line-break: strict;
   line-height: 20px;
   margin-top: 24px;
   text-size-adjust: 100%;
+  width: auto;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -235,7 +237,7 @@
   font-variant-numeric: normal;
   font-variation-settings: normal;
   font-weight: 600;
-  height: 48px;
+  height: auto;
   letter-spacing: normal;
   line-break: strict;
   line-height: 20px;
@@ -248,6 +250,7 @@
   outline-width: 0px;
   padding-bottom: 13px;
   padding-left: 23px;
+  padding-right: 23px;
   padding-top: 13px;
   position: relative;
   text-align: center;
@@ -264,7 +267,8 @@
   transition-duration: 0.2s, 0.1s;
   transition-property: box-shadow, transform;
   transition-timing-function: ease, ease;
-  width: 183.078px;
+  white-space: nowrap;
+  width: 205.586px;
   word-spacing: 0px;
   writing-mode: horizontal-tb;
   -webkit-font-smoothing: antialiased;

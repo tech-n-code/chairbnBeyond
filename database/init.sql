@@ -28,14 +28,21 @@ CREATE TABLE hosts(
     FOREIGN KEY (userId) REFERENCES users(id)
 );
 
+CREATE TABLE locations(
+    id serial PRIMARY KEY,
+    latitude float NOT NULL,
+    longitude float NOT NULL
+);
+
 CREATE TABLE listings (
     id serial PRIMARY KEY,
     title text,
     description text,
     price integer,
-    location text,
+    locationid integer NOT NULL,
     hostId integer NOT NULL,
-    FOREIGN KEY (hostId) REFERENCES hosts(id)
+    FOREIGN KEY (hostId) REFERENCES hosts(id),
+    FOREIGN KEY (locationid) REFERENCES locations(id)
 );
 
 CREATE TABLE listing_photos(
@@ -93,6 +100,11 @@ CREATE TABLE listing_amenities(
     FOREIGN KEY (listingId) REFERENCES listings(id),
     FOREIGN KEY (amenityId) REFERENCES amenities(id)
 );
+
+INSERT INTO locations (latitude, longitude) VALUES (48.230164, -101.291199);
+INSERT INTO locations (latitude, longitude) VALUES (40.7128, -74.0060);
+INSERT INTO locations (latitude, longitude) VALUES (35.6895, 139.6917);
+INSERT INTO locations (latitude, longitude) VALUES (51.5074, -0.1278);
 
 INSERT INTO amenity_types (amenity_type) VALUES ('Not Included');
 INSERT INTO amenity_types (amenity_type) VALUES ('Services');
@@ -160,15 +172,15 @@ INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Prudence', 
 INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Gertrude', 'Wobblepants', 'archibald.wobblepants@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/b4a23251-d713-468d-840b-4081b9e6c615.jpg?im_w=240');
 INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Clementine', 'Fluffernutter', 'clementine.fluffernutter@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/de6eac7b-3b86-4e63-8841-a44296af3446.jpg?im_w=240');
 
-INSERT INTO hosts(userId, about) VALUES (1, 'I am a host');
+INSERT INTO hosts(userId, about) VALUES (1, 'Why not Minot. Freezins the reason.');
 INSERT INTO hosts(userId, about) VALUES (2, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (3, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (4, 'I am a host');
 
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 1', 'Description 1', 100, 'Location 1', 1);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 2', 'Description 2', 200, 'Location 2', 2);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 3', 'Description 3', 300, 'Location 3', 3);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 4', 'Description 4', 400, 'Location 4', 4);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 1', 'Description 1', 100, 1, 1);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 2', 'Description 2', 200, 2, 2);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 3', 'Description 3', 300, 3, 3);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 4', 'Description 4', 400, 4, 4);
 
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (1, 1);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (1, 2);
@@ -295,4 +307,9 @@ INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communicatio
 INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 5, 'Who needs a theme park when you have this Chairbnb in Minot? The rollercoaster ride of comfort and laughter was simply unbeatable!', 5, 5, 5, 5, 5, 5,5, 5);
 INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 6, 'This should come with a warning sign: "Caution! Excessive comfort and delightful hospitality may cause severe addiction to the charm of North Dakota." Proceed at your own risk!', 5, 5, 5, 5, 5, 5,5, 6);
 
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://na.rdcpix.com/625946635/a545dc497c1d4e1385851ca5e12f5a14w-c0rd-w832_h468_r4_q80.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://cdn.abcotvs.com/dip/images/895569_073115-cc-Breaking-Bad-Jesse-3.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://i.ytimg.com/vi/ZkuUC995PSw/maxresdefault.jpg');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPZkX8EqX-UGLOK2yVqvSgDGvNBdOsPFmgA&usqp=CAU');
+INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://apriljulia.files.wordpress.com/2012/12/screen-shot-2013-06-07-at-9-37-47-pm.png');
 
