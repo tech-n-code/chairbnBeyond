@@ -11,6 +11,7 @@ import Reviews from "./Reviews/Reviews";
 import Reservation from "./Reservation/Reservation";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
+import HostInfo from "./Host/Host";
 
 function Body() {
   return (
@@ -22,7 +23,7 @@ function Body() {
           <div className={styles["body-left-column-container"]}>
             <div className="overview">Property Overview Component</div>
             <ChairCover />
-            <div className="host">Host Component</div>
+            <HostInfo />
             <AboutThisPlace />
             <Amenities />
             <div className="calendar">Calendar Component</div>

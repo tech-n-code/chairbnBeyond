@@ -16,7 +16,6 @@ function Map() {
       .then((res) => res.json())
       .then((data) => {
         setLocation(data);
-        console.log(data);
         const loader = new Loader({
           apiKey: "AIzaSyB1NYoGWbuFCIhTHipFCVItMVUoYg27ncM",
           version: "weekly",
