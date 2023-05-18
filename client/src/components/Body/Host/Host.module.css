@@ -1,3 +1,7 @@
+.mainContainer{
+  display: flex;
+}
+
 .userContainer {
   display: flex;
   flex-direction: column;
@@ -76,6 +80,8 @@
 
 .superHostDesc {
   text-align: left;
+  word-wrap:normal;
+  max-width: 300px;
 }
 
 p {
@@ -114,6 +120,7 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  flex-direction: column;
 }
 
 .contactInfo {
@@ -128,4 +135,7 @@ p {
   border-radius: 4px;
   color: black;
   padding: 8px 16px;
+}
+.userPicture{
+  border-radius: 40px;
 }

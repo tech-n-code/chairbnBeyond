@@ -3,7 +3,10 @@ import { Loader } from "@googlemaps/js-api-loader";
 import styles from "./Map.module.css";
 
 function Map() {
-  const [location, setLocation] = useState([]);
+  const [location, setLocation] = useState({
+    latitude: 0,
+    longitude: 0
+  });
   const [description, setDescription] = useState([]);
 
   function calculateCircleRadius(zoom) {
@@ -12,16 +15,14 @@ function Map() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/location")
+    fetch("http://localhost:4000/api/location/1")
       .then((res) => res.json())
       .then((data) => {
         setLocation(data);
         const loader = new Loader({
           apiKey: "AIzaSyB1NYoGWbuFCIhTHipFCVItMVUoYg27ncM",
           version: "weekly",
-          // ...additionalOptions
         });
-
         loader.load().then(() => {
           const google = window.google;
           var styles = [
@@ -54,10 +55,14 @@ function Map() {
               stylers: [{ visibility: "off" }],
             },
           ];
+          console.log(location)
+          // console.log("Latitude:", location.latitude);
+          // console.log("Longitude:", location.longitude);
+          // console.log(data)
           const map = new google.maps.Map(
             document.getElementById("map-container"),
             {
-              center: { lat: 48.230164, lng: -101.291199 },
+              center: { lat: Number(data.latitude), lng: Number(data.longitude) },
               zoom: 13,
               styles: styles,
               gestureHandling: "greedy", // Disable Ctrl + scroll zoom
@@ -121,7 +126,7 @@ function Map() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/location/description")
+    fetch("http://localhost:4000/api/location/description/1")
       .then((res) => res.json())
       .then((data) => {
         setDescription(data.description);

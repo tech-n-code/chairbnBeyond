@@ -17,8 +17,9 @@ app.use(express.json());
 
 //Routes
 
-app.get("/api/location", (req, res) => {
-    pool.query("SELECT location FROM listings", (err, result) => {
+app.get("/api/location/:id", (req, res) => {
+    let id = req.params.id
+    pool.query(`SELECT latitude, longitude FROM locations WHERE id = ${id}`, (err, result) => {
     if (err) {
       console.log(err);
       res.status(500).send("Error retrieving location from database");
@@ -27,8 +28,9 @@ app.get("/api/location", (req, res) => {
   });
 });
 
-app.get("/api/location/description", (req, res) => {
-  pool.query("SELECT description FROM listings", (err, result) => {
+app.get("/api/location/description/:id", (req, res) => {
+  let id = req.params.id
+  pool.query(`SELECT description FROM listings WHERE id = ${id}`, (err, result) => {
   if (err) {
     console.log(err);
     res.status(500).send("Error retrieving location description from database");
