@@ -4,12 +4,12 @@ import Footer from "./Footer/Footer.jsx";
 import { useParams } from "react-router-dom";
 
 function Page() {
-  const { locationId } = useParams();
+  const { listingId } = useParams();
   return (
     <>
-      <Header />
-      <Body />
-      <Footer />
+      <Header listingId={listingId} />
+      <Body listingId={listingId} />
+      <Footer listingId={listingId} />
     </>
   );
 }
