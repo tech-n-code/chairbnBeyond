@@ -28,14 +28,21 @@ CREATE TABLE hosts(
     FOREIGN KEY (userId) REFERENCES users(id)
 );
 
+CREATE TABLE locations(
+    id serial PRIMARY KEY,
+    latitude float NOT NULL,
+    longitude float NOT NULL
+);
+
 CREATE TABLE listings (
     id serial PRIMARY KEY,
     title text,
     description text,
     price integer,
-    location text,
+    locationid integer NOT NULL,
     hostId integer NOT NULL,
-    FOREIGN KEY (hostId) REFERENCES hosts(id)
+    FOREIGN KEY (hostId) REFERENCES hosts(id),
+    FOREIGN KEY (locationid) REFERENCES locations(id)
 );
 
 CREATE TABLE listing_photos(
@@ -93,6 +100,11 @@ CREATE TABLE listing_amenities(
     FOREIGN KEY (listingId) REFERENCES listings(id),
     FOREIGN KEY (amenityId) REFERENCES amenities(id)
 );
+
+INSERT INTO locations (latitude, longitude) VALUES (48.230164, -101.291199);
+INSERT INTO locations (latitude, longitude) VALUES (40.7128, -74.0060);
+INSERT INTO locations (latitude, longitude) VALUES (35.6895, 139.6917);
+INSERT INTO locations (latitude, longitude) VALUES (51.5074, -0.1278);
 
 INSERT INTO amenity_types (amenity_type) VALUES ('Not Included');
 INSERT INTO amenity_types (amenity_type) VALUES ('Services');
@@ -165,10 +177,10 @@ INSERT INTO hosts(userId, about) VALUES (2, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (3, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (4, 'I am a host');
 
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 1', 'Description 1', 100, 'Location 1', 1);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 2', 'Description 2', 200, 'Location 2', 2);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 3', 'Description 3', 300, 'Location 3', 3);
-INSERT INTO listings(title, description, price, location, hostId) VALUES ('Listing 4', 'Description 4', 400, 'Location 4', 4);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 1', 'Description 1', 100, 1, 1);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 2', 'Description 2', 200, 2, 2);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 3', 'Description 3', 300, 3, 3);
+INSERT INTO listings(title, description, price, locationid, hostId) VALUES ('Listing 4', 'Description 4', 400, 4, 4);
 
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (1, 1);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (1, 2);
