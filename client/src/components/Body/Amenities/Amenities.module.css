@@ -8,7 +8,22 @@
   font-weight: 400;
   line-break: strict;
   line-height: 20px;
-  padding: 30px;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amenities-div {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 48px;
+  padding-top: 48px;
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -38,6 +53,20 @@
   font-weight: 600;
   line-break: strict;
   line-height: 26px;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-break: strict;
+  line-height: 26px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-bottom: 0px;
@@ -50,26 +79,7 @@
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.amenities_container {
-  align-items: stretch;
-  box-sizing: border-box;
-  color: rgb(34, 34, 34);
-  display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  justify-content: flex-start;
-  line-break: strict;
-  line-height: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 60%;
+  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -90,6 +100,26 @@
   margin-right: 0px;
   text-size-adjust: 100%;
   width: 60%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.amenities_div {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+  text-size-adjust: 100%;
+  width: 50%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -146,26 +176,105 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.amenities-button-div {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  margin-top: 24px;
+  text-size-adjust: 100%;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 .show-amenities-button {
   align-items: flex-start;
   appearance: button;
   background-attachment: scroll;
   background-clip: border-box;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   background-image: none;
   background-origin: padding-box;
   background-position-x: 0%;
   background-position-y: 0%;
-  background-repeat: repeat;
   background-size: auto;
-  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-color: rgb(34, 34, 34);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variation-settings: normal;
+  font-weight: 600;
+  height: auto;
+  letter-spacing: normal;
+  line-break: strict;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  outline-color: rgb(34, 34, 34);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 13px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 13px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(34, 34, 34);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  touch-action: manipulation;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.2s, 0.1s;
+  transition-property: box-shadow, transform;
+  transition-timing-function: ease, ease;
+  white-space: nowrap;
+  width: 205.586px;
+  word-spacing: 0px;
+  writing-mode: horizontal-tb;
+  -webkit-font-smoothing: antialiased;
 }
 
-.show-amenities-button:hover {
+/* .show-amenities-button:hover {
   background-color: #dddddd;
 }
 
@@ -176,4 +285,4 @@
 
 .show-amenities-button:active {
   transform: translateY(1px);
-}
+} */

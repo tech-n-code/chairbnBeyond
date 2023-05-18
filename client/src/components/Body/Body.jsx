@@ -11,9 +11,10 @@ import Reviews from "./Reviews/Reviews";
 import Reservation from "./Reservation/Reservation";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
+import HostInfo from "./Host/Host";
 import PropertyOverview from "./PropertyOverview/PropertyOverview";
 
-function Body() {
+function Body(props) {
   return (
     <>
       <div className={styles["body-container"]}>
@@ -24,13 +25,13 @@ function Body() {
             <div className="overview"></div>
             <PropertyOverview />
             <ChairCover />
-            <div className="host">Host Component</div>
+            <HostInfo />
             <AboutThisPlace />
-            <Amenities />
+            <Amenities listingId={props.listingId} />
             <div className="calendar">Calendar Component</div>
           </div>
           <div className={styles["body-right-column-container"]}>
-            <Reservation className={styles["reservation"]}/>
+            <Reservation className={styles["reservation"]} />
           </div>
         </div>
         <Reviews />

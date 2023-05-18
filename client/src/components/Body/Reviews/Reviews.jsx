@@ -10,7 +10,7 @@ export default function Reviews() {
         const response = await fetch("http://localhost:3005/api/reviews");
         const data = await response.json();
         setReviews(data);
-        console.log("fetched reviews:", data);
+        // console.log("fetched reviews:", data);
       } catch (error) {
         console.error("Error fetching reviews:", error);
       }
@@ -184,8 +184,16 @@ export default function Reviews() {
                                 >
                                   <div className={styles["review-date"]}>
                                     <ol className={styles["date-list"]}>
-                                      <li className={styles.date}>
+                                      {/* <li className={styles.date}>
                                         {review.date}
+                                      </li> */}
+                                      <li className={styles.date}>
+                                        {new Date(
+                                          review.enddate
+                                        ).toLocaleString("en-US", {
+                                          month: "long",
+                                          year: "numeric",
+                                        })}
                                       </li>
                                     </ol>
                                   </div>

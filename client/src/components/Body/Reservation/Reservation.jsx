@@ -1,4 +1,5 @@
 import styles from "./Reservation.module.css";
+import Guests from "./Guests/Guests";
 
 function Reservation() {
   return (
@@ -6,14 +7,15 @@ function Reservation() {
       <div className={styles["reservation"]}>
         <div className={styles["reservationTitle"]}>
           <div>Rate/night</div>
-          <div>stars/reviews</div>
+          <div className={styles["reviews"]}>stars/reviews</div>
         </div>
         <div className={styles["reservationDetails"]}>
           <div className={styles["checkInOut"]}>
             <button className={styles["checkIn"]}>CHECK-IN</button>
             <button className={styles["checkOut"]}>CHECK-OUT</button>
           </div>
-          <button className={styles["guests"]}>GUESTS</button>
+          {/* <button className={styles["guests"]}>GUESTS</button> */}
+          <Guests />
         </div>
         <div className={styles["reserveButton"]}>
           <button className={styles["reserve"]}>Reserve</button>
@@ -23,15 +25,15 @@ function Reservation() {
         </div>
         <div className={styles["costBreakdown"]}>
           <div className={styles["roomFee"]}>
-            <div>$55 x 5 nights</div>
+            <u>$55 x 5 nights</u>
             <div>$274</div>
           </div>
           <div className={styles["cleaningFee"]}>
-            <div>Cleaning fee</div>
+            <u>Cleaning fee</u>
             <div>$14</div>
           </div>
           <div className={styles["serviceFee"]}>
-            <div>Chairbnb service fee</div>
+            <u>Chairbnb service fee</u>
             <div>$41</div>
           </div>
         </div>

@@ -15,6 +15,10 @@
     padding: 10px;
 }
 
+.reviews {
+    cursor: pointer;
+}
+
 .reservationDetails {
     border: 1px solid gray;
     border-radius: 8px;
@@ -29,6 +33,7 @@
     font-weight: 500;
     font-size: 12px;
     text-align: left;
+    cursor: pointer;
 }
 
 .checkOut {
@@ -43,9 +48,10 @@
     font-weight: 500;
     font-size: 12px;
     text-align: left;
+    cursor: pointer;
 }
 
-.guests {
+/* .guests {
     padding: 15px;
     background-color: transparent;
     border-top: 1px solid gray;
@@ -57,9 +63,8 @@
     width: 100%;
     font-size: 12px;
     text-align: left;
-}
-
-
+    cursor: pointer;
+} */
 
 .reserveButton {
     padding: 10px;
@@ -74,6 +79,7 @@
     border: none;
     color: white;
     font-weight: 600;
+    cursor: pointer;
 }
 
 p {
@@ -111,3 +117,6 @@ p {
     padding-bottom: 10px;
 }
 
+u {
+    cursor: pointer;
+}
