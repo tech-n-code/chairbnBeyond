@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Amenities.module.css";
-import Modal from "../Modal/Modal.jsx";
+import Modal from "./Modal/Modal.jsx";
 
 function Amenities() {
   const [amenities, setAmenities] = useState([]);
@@ -32,10 +32,13 @@ function Amenities() {
   }, []);
   return (
     <div className={styles["master_container"]}>
-      <div className={styles["title_div"]}>
-        <div className={styles["title_header"]}>What this place offers</div>
-      </div>
-      <div className={styles["amenities_container"]}>
+      <div className={styles["amenities-div"]}>
+        <div className={styles["title_div"]}>
+          <div className={styles["title_header"]}>
+            <h2 className={styles["title"]}>What this place offers</h2>
+          </div>
+        </div>
+
         <div className={styles["amenity-table"]}>
           {tenAmenities.map((amenity) => (
             <div className={styles["amenities_div"]}>
@@ -44,10 +47,10 @@ function Amenities() {
             </div>
           ))}
         </div>
-        <div>
+        <div className={styles["amenities-button-div"]}>
           <button
-            className={styles["show-amenities-button"]}
             type="button"
+            className={styles["show-amenities-button"]}
             onClick={openModal}
           >
             Show all {amenities.length} amenities

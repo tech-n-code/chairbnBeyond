@@ -17,7 +17,8 @@ CREATE TABLE users (
     fname text NOT NULL,
     lname text NOT NULL,
     email text NOT NULL UNIQUE,
-    password TEXT NOT NULL
+    password TEXT NOT NULL,
+    photo_url text
 );
 
 CREATE TABLE hosts(
@@ -44,16 +45,6 @@ CREATE TABLE listing_photos(
     FOREIGN KEY (listingId) REFERENCES listings(id)
 );
 
-CREATE TABLE reviews (
-    id serial PRIMARY KEY,
-    listingId integer NOT NULL,
-    userId integer NOT NULL,
-    rating integer NOT NULL,
-    review text,
-    FOREIGN KEY (userId) REFERENCES users(id),
-    FOREIGN KEY (listingId) REFERENCES listings(id)
-);
-
 CREATE TABLE bookings (
     id serial PRIMARY KEY,
     listingId integer NOT NULL,
@@ -63,6 +54,24 @@ CREATE TABLE bookings (
     numGuests integer NOT NULL,
     FOREIGN KEY (userId) REFERENCES users(id),
     FOREIGN KEY (listingId) REFERENCES listings(id)
+);
+
+CREATE TABLE reviews (
+    id serial PRIMARY KEY,
+    listingId integer NOT NULL,
+    userId integer NOT NULL,
+    rating integer NOT NULL,
+    cleanliness integer NOT NULL,
+    communication integer NOT NULL,
+    checkin integer NOT NULL,
+    accuracy integer NOT NULL,
+    location integer NOT NULL,
+    value integer NOT NULL,
+    review text,
+    bookingId integer NOT NULL,
+    FOREIGN KEY (userId) REFERENCES users(id),
+    FOREIGN KEY (listingId) REFERENCES listings(id),
+    FOREIGN KEY (bookingId) REFERENCES bookings(id)
 );
 
 CREATE TABLE amenity_types(
@@ -144,10 +153,12 @@ INSERT INTO amenities (amenity, typeId) VALUES ('Smoking allowed', 1);
 INSERT INTO amenities (amenity, typeId) VALUES ('Events allowed', 1);
 INSERT INTO amenities (amenity, typeId) VALUES ('Long term stays allowed', 1);
 
-INSERT INTO users(fname, lname, email, password) VALUES ('John', 'Doe', 'john.doe@gmail.com', 'password');
-INSERT INTO users(fname, lname, email, password) VALUES ('Jane', 'Doe', 'jane.doe@gmail.com', 'password');
-INSERT INTO users(fname, lname, email, password) VALUES ('John', 'Smith', 'john.smith@gmail.com', 'password');
-INSERT INTO users(fname, lname, email, password) VALUES ('Jane', 'Smith', 'jane.smith@gmail.com', 'password');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Doe', 'john.doe@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/cd1c0777-f3b3-40a3-8dab-c96a5cd2efef.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Doe', 'jane.doe@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/c53ca4c0-af8f-4ba0-b82c-9711efc1cc68.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Smith', 'john.smith@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/e2d7271a-8691-41c3-931f-dc6592e12eb0.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Smith', 'jane.smith@gmail.com', 'password', 'https://a0.muscache.com/im/pictures/user/cc795c01-e0a1-4ac4-849c-85c2ca70afee.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('John', 'Johnson', 'john.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/b4a23251-d713-468d-840b-4081b9e6c615.jpg?im_w=240');
+INSERT INTO users(fname, lname, email, password, photo_url) VALUES ('Jane', 'Johnson', 'jane.johnson@gmail.com', 'password','https://a0.muscache.com/im/pictures/user/de6eac7b-3b86-4e63-8841-a44296af3446.jpg?im_w=240');
 
 INSERT INTO hosts(userId, about) VALUES (1, 'I am a host');
 INSERT INTO hosts(userId, about) VALUES (2, 'I am a host');
@@ -270,9 +281,18 @@ INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 19);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 20);
 INSERT INTO listing_amenities(listingId, amenityId) VALUES (4, 21);
 
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 1, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 2, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 3, 'This place was great!', 5);
-INSERT INTO reviews(listingId, userId, review, rating) VALUES (1, 4, 'This place was great!', 5);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 1, '2018-01-01', '2018-01-03', 2);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 2, '2018-02-05', '2018-02-09', 1);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 3, '2018-03-07', '2018-03-12', 3);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 4, '2018-04-01', '2018-04-05', 4);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 5, '2018-05-01', '2018-05-03', 2);
+INSERT INTO bookings(listingId, userId, startDate, endDate, numGuests) VALUES (1, 6, '2018-06-01', '2018-06-03', 2);
+
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value, bookingId) VALUES (1, 1, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 1);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 2, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 2);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 3, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 3);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 4, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 4);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 5, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 5);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 6, 'This place was great!', 5, 5, 5, 5, 5, 5,5, 6);
 
 

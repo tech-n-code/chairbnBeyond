@@ -1,0 +1,67 @@
+.body-container {
+  /* box-sizing: border-box; */
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  position: relative;
+  /* text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; */
+}
+
+.body-after-gallery-container {
+  /* box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; */
+  display: flex;
+}
+
+
+.body-left-column-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  /* display: block; */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 60%;
+  /* position: relative;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; */
+}
+
+
+.body-right-column-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  /* display: block; */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 20px;
+  margin-right: 0px;
+  width: 40%;
+  /* position: relative;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; */
+}
