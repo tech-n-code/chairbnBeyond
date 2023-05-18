@@ -12,6 +12,7 @@ import Reservation from "./Reservation/Reservation";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
 import HostInfo from "./Host/Host";
+import Calendar from "./Calendar/Calendar"
 
 function Body() {
   return (

@@ -22,6 +22,45 @@ export default function Calendar() {
                 </div>
               </div>
             </div>
+            <div className={styles["calendars-container-1"]}>
+              <div className={styles["calendars-container-2"]}>
+                <div className={styles["calendars-container-3"]}>
+                  <div className={styles["calendars-container-4"]}>
+                    <div className={styles["calendars-container-5"]}>
+                      <div className={styles["calendars-container-6"]}>
+                        <div className={styles["calendars-container-7"]}>
+                          <div className={styles["calendar-days-container"]}>
+                            <div className={styles["days-container"]}>
+                              <ul className={styles["days-list"]}>
+                                <li className={styles.day}>Su</li>
+                                <li className={styles.day}>Mo</li>
+                                <li className={styles.day}>Tu</li>
+                                <li className={styles.day}>We</li>
+                                <li className={styles.day}>Th</li>
+                                <li className={styles.day}>Fr</li>
+                                <li className={styles.day}>Sa</li>
+                              </ul>
+                            </div>
+                            <div className={styles["days-container"]}>
+                              <ul className={styles["days-list"]}>
+                                <li className={styles.day}>Su</li>
+                                <li className={styles.day}>Mo</li>
+                                <li className={styles.day}>Tu</li>
+                                <li className={styles.day}>We</li>
+                                <li className={styles.day}>Th</li>
+                                <li className={styles.day}>Fr</li>
+                                <li className={styles.day}>Sa</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div className={styles["calendars-container-8"]}></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
