@@ -11,6 +11,7 @@ function App() {
   const routeDefinitions = createRoutesFromElements(
     <Route>
       <Route path="/:listingId" element={<Page />} />
+      <Route path="*" element={<Page />} />
     </Route>
   );
 

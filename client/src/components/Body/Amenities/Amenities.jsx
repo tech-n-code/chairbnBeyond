@@ -29,7 +29,10 @@ function Amenities(props) {
       .then(
         fetch(
           `http://localhost:3002/api/amenities/ten/${props.listingId}`
-        ).then((res) => res.json().then((data) => setTenAmenities(data)))
+        ).then((res) => res.json().then((data) => {
+          setTenAmenities(data);
+          console.log(tenAmenities);
+        }))
       );
   }, []);
   return (
@@ -43,7 +46,7 @@ function Amenities(props) {
 
         <div className={styles["amenity-table"]}>
           {tenAmenities.map((amenity) => (
-            <div className={styles["amenities_div"]}>
+            <div key={amenity.id} className={styles["amenities_div"]}>
               <div className={styles["amenity_svg"]}></div>
               <div className={styles["amenity"]}>{amenity.amenity}</div>
             </div>

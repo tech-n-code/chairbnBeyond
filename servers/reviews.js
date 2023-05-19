@@ -29,14 +29,18 @@ app.get("/api/reviews", (req, res) => {
 
 app.get("/api/reviews/:id", (req, res) => {
   const taskId = req.params.id;
-  pool.query("SELECT * FROM reviews WHERE id = $1", [taskId], (err, result) => {
-    if (err) {
-      console.error(err);
-      res.status(500).send("Internal server error");
-    } else {
-      res.send(result.rows);
+  pool.query(
+    "SELECT reviews.rating, reviews.review, users.fname, users.photo_url, bookings.enddate FROM reviews JOIN users ON users.id = reviews.userid JOIN bookings ON bookings.id = reviews.bookingid WHERE reviews.listingid =  $1",
+    [taskId],
+    (err, result) => {
+      if (err) {
+        console.error(err);
+        res.status(500).send("Internal server error");
+      } else {
+        res.send(result.rows);
+      }
     }
-  });
+  );
 });
 
 app.listen(PORT, () => {
