@@ -31,7 +31,7 @@ function Body(props) {
             <div className="calendar">Calendar Component</div>
           </div>
           <div className={styles["body-right-column-container"]}>
-            <Reservation className={styles["reservation"]} />
+            <Reservation listingId={props.listingId} className={styles["reservation"]} />
           </div>
         </div>
         <Reviews />
