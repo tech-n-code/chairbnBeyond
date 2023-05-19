@@ -12,6 +12,7 @@ import Reservation from "./Reservation/Reservation";
 import Reviews from "./Reviews/Reviews";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
+import Calendar from "./Calendar/Calendar"
 
 function Body(props) {
   return (
@@ -26,7 +27,7 @@ function Body(props) {
             <HostInfo listingId={props.listingId}/>
             <AboutThisPlace />
             <Amenities listingId={props.listingId} />
-            <div className="calendar">Calendar Component</div>
+            <Calendar />
           </div>
           <div className={styles["body-right-column-container"]}>
             <Reservation
