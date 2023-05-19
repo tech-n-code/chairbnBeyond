@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-top: 1px solid lightgray;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+    color: rgb(87, 85, 85);
+    justify-content: space-between;
+    font-size: 14px;
+    background-color: rgb(245, 245, 245);
+}
+
+.title {
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #222222;
+}
+
+.containerElement {
+    padding-bottom: 16px;
+}
+
+
