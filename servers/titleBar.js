@@ -19,7 +19,7 @@ app.use(cors());
 app.get("/api/title/:id", (req, res) => {
   const id = req.params.id;
   db.query(
-    "SELECT l.id, l.title, l.price, ROUND(AVG(r.rating), 2) AS average_rating, SUM(1) AS review_count, json_object_agg(r.id::text, r.review) AS reviews FROM listings l LEFT JOIN reviews r ON l.id = r.listingId WHERE l.id = $1 GROUP BY l.id, l.title ORDER BY l.id;",
+    "SELECT l.id, l.title, l.price, loc.city, ROUND(AVG(r.rating), 2) AS average_rating, SUM(1) AS review_count, json_object_agg(r.id::text, r.review) AS reviews FROM listings l LEFT JOIN reviews r ON l.id = r.listingId JOIN locations loc ON l.locationid = loc.id WHERE l.id = $1 GROUP BY l.id, l.title, loc.city ORDER BY l.id;",
     [id],
     (err, result) => {
       if (err) {

@@ -1,6 +1,6 @@
 .body-container {
   color: rgb(34, 34, 34);
-  display: block;
+  /* display: block; */
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif;
   font-size: 16px;
