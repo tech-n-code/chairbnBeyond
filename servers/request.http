@@ -37,3 +37,10 @@ GET http://localhost:4001/api/hosts/photo/2
 ###Get reviews
 GET http://localhost:3005/api/reviews
 
+###Get gallery
+GET http://localhost:3010/api/gallery
+
+###Get gallery photo urls only
+GET http://localhost:3010/api/gallery/photo_url/1
+
+
