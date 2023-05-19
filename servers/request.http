@@ -1,6 +1,9 @@
 ###Test
 GET http://localhost:3001/api/test
 
+###Get Title information
+Get http://localhost:3050/api/title/1
+
 ###Get all amenities
 GET http://localhost:3002/api/amenities
 

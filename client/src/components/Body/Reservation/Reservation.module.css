@@ -12,7 +12,8 @@
 .reservationTitle {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .reviews {
@@ -119,4 +120,22 @@ p {
 
 u {
     cursor: pointer;
+}
+
+.extraInfo {
+    display: flex;
+    font-size: 13px;
+}
+
+.infoElement {
+    padding-left: 4px;
+}
+
+.starIcon {
+    font-size: 18px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 22px;
 }
