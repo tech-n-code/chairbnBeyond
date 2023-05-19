@@ -3,7 +3,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3050;
 const { Client } = require("pg");
 const db = new Client({ connectionString: process.env.DATABASE });
 db.connect();
@@ -16,15 +16,15 @@ app.use(cors());
 
 //Route
 
-app.get("/api/about/:id", (req, res) => {
+app.get("/api/title/:id", (req, res) => {
   const id = req.params.id;
   db.query(
-    "SELECT hostId, id, description FROM listings WHERE hostId = $1;",
+    "SELECT l.id, l.title, AVG(r.rating) AS average_rating, SUM(1) AS review_count, json_object_agg(r.id::text, r.review) AS reviews FROM listings l LEFT JOIN reviews r ON l.id = r.listingId WHERE l.id = $1 GROUP BY l.id, l.title ORDER BY l.id;",
     [id],
     (err, result) => {
       if (err) {
         console.log(err);
-        res.status(500).send("Error retrieving about details from database");
+        res.status(500).send("Error retrieving title info from database");
       }
       res.send(result.rows);
     }

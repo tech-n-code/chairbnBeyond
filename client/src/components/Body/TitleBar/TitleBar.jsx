@@ -1,12 +1,31 @@
+import { useEffect, useState } from "react";
 import styles from "./TitleBar.module.css";
 
-function TitleBar() {
+function TitleBar(props) {
+    const [titleData, setTitleData] = useState([]);
+
+    const fetchTitleData = async () => {
+        try {
+          const response = await fetch(`http://localhost:3050/api/title/${props.listingId}`);
+          const data = await response.json();
+          console.log(data);
+          setTitleData(data);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+    useEffect(() => {
+        fetchTitleData();
+      }, []);
+
   return (
     <>
       <div className={styles["titlebar"]}>
         <div className={styles["titleContainer"]}>
           <img src="../../../../src/assets/accessibility.png" alt="" />
-          <div className={styles["actualTitle"]}>Property Title</div>
+            {titleData.length > 0 ? (<div className={styles["actualTitle"]}>{titleData[0].title}</div>) : (<div>Loading...</div>)}
+          {/* <div className={styles["actualTitle"]}>{titleData[0].title}Property Title</div> */}
         </div>
 
         <div className={styles["extraInfo"]}>
