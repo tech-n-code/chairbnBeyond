@@ -75,10 +75,27 @@ export default function Calendar() {
                             </div>
                             <div className={styles["calendar-lean-section"]}>
                               <div className={styles["calendar-wide-section"]}>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                                <div className={styles["prev-month-section"]}>
+                                  <div className={styles["prev-month-container"]}>
+                                    <div className={styles["single-calendar-header-container"]}>
+                                      <div className={styles["date-arrow-container"]}>
+                                        <h3 className={styles["month-year"]}>April 2023</h3>
+                                      </div>
+                                    </div>
+                                    <table className={styles["days-table"]}>
+                                      <tbody className={styles["days-table-body"]}></tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div
+                                  className={styles["displayed-month-section"]}
+                                ></div>
+                                <div
+                                  className={styles["displayed-month-section"]}
+                                ></div>
+                                <div
+                                  className={styles["next-month-section"]}
+                                ></div>
                               </div>
                             </div>
                           </div>

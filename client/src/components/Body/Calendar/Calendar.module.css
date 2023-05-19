@@ -927,3 +927,196 @@
   -webkit-box-direction: normal;
   -webkit-font-smoothing: antialiased;
 }
+
+.prev-month-section {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  min-height: 100%;
+  opacity: 0%;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  text-size-adjust: 100%;
+  vertical-align: top;
+  visibility: hidden;
+  width: auto;
+  z-index: -1;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.prev-month-container {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 0px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 0px;
+  pointer-events: none;
+  text-align: center;
+  user-select: none;
+  vertical-align: top;
+  visibility: hidden;
+  width: auto;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.single-calendar-header-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 49px;
+  padding-top: 22px;
+  pointer-events: none;
+  text-align: center;
+  text-size-adjust: 100%;
+  user-select: none;
+  visibility: hidden;
+  width: auto;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.date-arrow-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  pointer-events: none;
+  text-align: center;
+  text-size-adjust: 100%;
+  user-select: none;
+  visibility: hidden;
+  width: auto;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.month-year {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  pointer-events: none;
+  text-align: center;
+  user-select: none;
+  visibility: hidden;
+  width: auto;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.days-table {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: separate;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  border-top-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: table;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  pointer-events: none;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  user-select: none;
+  visibility: hidden;
+  width: auto;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.days-table-body {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: separate;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  border-top-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: table-row-group;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  pointer-events: none;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  user-select: none;
+  vertical-align: middle;
+  visibility: hidden;
+  width: auto;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
