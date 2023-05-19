@@ -1313,6 +1313,7 @@
   height: 1px;
   line-break: strict;
   line-height: 20px;
+  margin-bottom: 10px;
   width: auto;
   -webkit-font-smoothing: antialiased;
 }

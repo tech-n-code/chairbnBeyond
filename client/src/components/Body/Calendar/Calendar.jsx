@@ -138,6 +138,7 @@ import styles from "./Calendar.module.css";
 export default function Calendar() {
   return (
     <div className={styles["calendar-container"]}>
+      <div className={styles["top-border"]}></div>
       <div className={styles["heading-container"]}>
         <div className={styles["nights-location-container"]}>
           <h2 className={styles["nights-location-heading"]}>
