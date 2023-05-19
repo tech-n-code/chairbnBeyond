@@ -1,4 +1,4 @@
-.calendar-component {
+/* .calendar-component {
   box-sizing: border-box;
   color: rgb(34, 34, 34);
   display: block;
@@ -953,7 +953,27 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.prev-month-container {
+.current-month-section {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: inline-block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  min-height: 100%;
+  text-align: left;
+  text-size-adjust: 100%;
+  vertical-align: top;
+  width: auto;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.month-container {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -1119,4 +1139,557 @@
   -webkit-border-vertical-spacing: 2px;
   -webkit-box-direction: normal;
   -webkit-font-smoothing: antialiased;
+}
+
+.table-row {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: separate;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  border-top-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: table-row;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  pointer-events: none;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  user-select: none;
+  vertical-align: middle;
+  visibility: hidden;
+  width: auto;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.td1 {
+  border-collapse: separate;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: table-cell;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  pointer-events: none;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  user-select: none;
+  vertical-align: middle;
+  visibility: hidden;
+  width: auto;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.td2 {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-right-radius: 4px;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-collapse: separate;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(34, 34, 34);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-right-radius: 4px;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: default;
+  display: table-cell;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 81px;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  pointer-events: none;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  user-select: none;
+  vertical-align: middle;
+  visibility: hidden;
+  width: 83px;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.td-div {
+  border-right-style: solid;
+  border-right-width: 1.5px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(176, 176, 176);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 81px;
+  justify-content: center;
+  line-break: strict;
+  line-height: 18px;
+  margin-left: 1px;
+  margin-right: 1px;
+  pointer-events: none;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(176, 176, 176);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  user-select: none;
+  visibility: hidden;
+  width: 81px;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-font-smoothing: antialiased;
+} */
+
+.top-border {
+  border-top-color: rgb(221, 221, 221);
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 1px;
+  line-break: strict;
+  line-height: 20px;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nights-location-heading {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-break: strict;
+  line-height: 26px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.date-range-container {
+  box-sizing: border-box;
+  color: rgb(113, 113, 113);
+  display: block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 18px;
+  padding-top: 8px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.date-range {
+  box-sizing: border-box;
+  color: rgb(113, 113, 113);
+  display: -webkit-box;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 18px;
+  -webkit-box-orient: vertical;
+  -webkit-font-smoothing: antialiased;
+  -webkit-line-clamp: 2;
+}
+
+.calendars-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.single-calendar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-calendar-header {
+  display: flex;
+  justify-content: center;
+}
+
+.days-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.header-left-arrow {
+  left: 40px;
+  position: absolute;
+}
+
+.header-right-arrow {
+  align-self: flex-end;
+}
+
+.day {
+  box-sizing: border-box;
+  color: rgb(113, 113, 113);
+  display: inline-block;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  height: auto;
+  line-break: strict;
+  line-height: 16px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-bottom: 0px;
+  text-align: center;
+  text-size-adjust: 100%;
+  width: 43px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+table {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: separate;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  border-top-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: table;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  pointer-events: none;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  user-select: none;
+  width: auto;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+tbody {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: separate;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  border-top-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: table-row-group;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  pointer-events: none;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  user-select: none;
+  vertical-align: middle;
+  width: auto;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+tr {
+  border-bottom-color: rgb(128, 128, 128);
+  border-collapse: separate;
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
+  border-top-color: rgb(128, 128, 128);
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  display: table-row;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto;
+  line-break: strict;
+  line-height: 20px;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  user-select: none;
+  vertical-align: middle;
+  width: auto;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+td {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-collapse: separate;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(34, 34, 34);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: default;
+  display: table-cell;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 42px;
+  line-break: strict;
+  line-height: 20px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  vertical-align: middle;
+  width: 44px;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-direction: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.past-day {
+  align-items: center;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
+  border-collapse: separate;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(255, 255, 255);
+  border-left-style: solid;
+  border-left-width: 1.5px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: solid;
+  border-right-width: 1.5px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-top-style: solid;
+  border-top-width: 1.5px;
+  box-sizing: border-box;
+  color: rgb(176, 176, 176);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 42px;
+  justify-content: center;
+  line-break: strict;
+  line-height: 18px;
+  margin-left: 1px;
+  margin-right: 1px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(176, 176, 176);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  width: 42px;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.present-future-day {
+  align-items: center;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
+  border-collapse: separate;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(255, 255, 255);
+  border-left-style: solid;
+  border-left-width: 1.5px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: solid;
+  border-right-width: 1.5px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-top-style: solid;
+  border-top-width: 1.5px;
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 42px;
+  justify-content: center;
+  line-break: strict;
+  line-height: 18px;
+  margin-left: 1px;
+  margin-right: 1px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  text-size-adjust: 100%;
+  width: 42px;
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 2px;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.clear-dates {
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+img {
+  height: 20px;
+  width: 25px;
+  padding-left: 25px;
 }
