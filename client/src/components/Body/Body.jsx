@@ -20,7 +20,7 @@ function Body(props) {
     <>
       <div className={styles["body-container"]}>
         <TitleBar listingId={props.listingId}/>
-        <Gallery />
+        <Gallery listingId={props.listingId} />
         <div className={styles["body-after-gallery-container"]}>
           <div className={styles["body-left-column-container"]}>
             <PropertyOverview />
