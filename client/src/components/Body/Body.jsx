@@ -26,7 +26,7 @@ function Body(props) {
             <ChairCover />
             <HostInfo listingId={props.listingId}/>
             <AboutThisPlace />
-            <Amenities />
+            <Amenities listingId={props.listingId} />
             <Calendar />
           </div>
           <div className={styles["body-right-column-container"]}>
