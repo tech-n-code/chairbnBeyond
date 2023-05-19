@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
 import styles from "./Map.module.css";
 const apiKey = import.meta.env.VITE_API_KEY;
-console.log(apiKey)
+console.log(apiKey);
 
 function Map(props) {
   const [location, setLocation] = useState({
@@ -21,16 +21,16 @@ function Map(props) {
     fetch(`http://localhost:4000/api/location/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
-        setLocation({latitude: data.latitude, longitude: data.longitude});
+        setLocation({ latitude: data.latitude, longitude: data.longitude });
         fetch(
           `https://geocode.maps.co/reverse?lat=${data.latitude}&lon=${data.longitude}`
         )
           .then((res) => res.json())
           .then((data) => {
-            const city = data.address.city
-            const state = data.address.state
-            console.log(city, state)
-            setCityAndState(`${city}, ${state}`)
+            const city = data.address.city;
+            const state = data.address.state;
+            console.log(city, state);
+            setCityAndState(`${city}, ${state}`);
           });
         const loader = new Loader({
           apiKey: apiKey,
@@ -144,24 +144,23 @@ function Map(props) {
       .then((res) => res.json())
       .then((data) => {
         setDescription(data.description);
-      })
-      
+      });
   }, []);
 
   function showMore() {
     console.log("show more func");
   }
 
-  console.log(cityAndState)
-
   return (
     <>
-      <div id="locationInfo" className={styles["locationInfo"]}>
-        <h2>Where you'll be</h2>
-        <div id="map-container" className={styles["map-container"]}></div>
-        <h3>{cityAndState}</h3>
-        <p>{description}</p>
-        <span onClick={showMore}>Show more </span>
+      <div className={styles["mainContainer"]}>
+        <div id="locationInfo" className={styles["locationInfo"]}>
+          <h2>Where you'll be</h2>
+          <div id="map-container" className={styles["map-container"]}></div>
+          <h3>{cityAndState}</h3>
+          <p>{description}</p>
+          <span onClick={showMore}>Show more &gt;</span>
+        </div>
       </div>
     </>
   );
