@@ -23,7 +23,7 @@ function Body(props) {
           <div className={styles["body-left-column-container"]}>
             <PropertyOverview />
             <ChairCover />
-            <HostInfo />
+            <HostInfo listingId={props.listingId}/>
             <AboutThisPlace />
             <Amenities listingId={props.listingId} />
             <div className="calendar">Calendar Component</div>
