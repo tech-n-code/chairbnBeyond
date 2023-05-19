@@ -1,20 +1,63 @@
+import { useEffect, useState } from "react";
 import styles from "./Reservation.module.css";
 import Guests from "./Guests/Guests";
 
-function Reservation() {
+function Reservation(props) {
+  const [titleData, setTitleData] = useState([]);
+
+  const fetchTitleData = async () => {
+    try {
+      const response = await fetch(
+        `http://localhost:3050/api/title/${props.listingId}`
+      );
+      const data = await response.json();
+      console.log(data);
+      setTitleData(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchTitleData();
+  }, []);
+
   return (
     <>
       <div className={styles["reservation"]}>
         <div className={styles["reservationTitle"]}>
-          <div>Rate/night</div>
-          <div className={styles["reviews"]}>stars/reviews</div>
+          <div>
+            <span className={styles["price"]}>
+              {titleData.length > 0 ? <>${titleData[0].price} </> : "Rate"}
+            </span>
+            <span>night</span>
+          </div>
+          <div className={styles["reviews"]}>
+            {titleData.length > 0 ? (
+              <div className={styles["extraInfo"]}>
+                <span className={styles["starIcon"]}>&#9733;</span>
+                <div className={styles["infoElement"]}>
+                  {titleData[0].average_rating}
+                </div>
+                <div className={styles["infoElement"]}> &#x2022; </div>
+                <div className={styles["infoElement"]}>
+                  <a
+                  //   href="nothingyet"
+                  >
+                    {titleData[0].review_count} reviews
+                  </a>
+                </div>
+              </div>
+            ) : (
+              "stars/reviews"
+            )}
+          </div>
         </div>
         <div className={styles["reservationDetails"]}>
           <div className={styles["checkInOut"]}>
             <button className={styles["checkIn"]}>CHECK-IN</button>
             <button className={styles["checkOut"]}>CHECK-OUT</button>
           </div>
-          {/* <button className={styles["guests"]}>GUESTS</button> */}
           <Guests />
         </div>
         <div className={styles["reserveButton"]}>
@@ -25,21 +68,21 @@ function Reservation() {
         </div>
         <div className={styles["costBreakdown"]}>
           <div className={styles["roomFee"]}>
-            <div>$55 x 5 nights</div>
-            <div>$274</div>
+            <u>$55 x 5 nights</u>
+            <div>$275</div>
           </div>
           <div className={styles["cleaningFee"]}>
-            <div>Cleaning fee</div>
+            <u>Cleaning fee</u>
             <div>$14</div>
           </div>
           <div className={styles["serviceFee"]}>
-            <div>Chairbnb service fee</div>
+            <u>Chairbnb service fee</u>
             <div>$41</div>
           </div>
         </div>
         <div className={styles["totalFee"]}>
           <div>Total before taxes</div>
-          <div>$329</div>
+          <div>$330</div>
         </div>
       </div>
     </>

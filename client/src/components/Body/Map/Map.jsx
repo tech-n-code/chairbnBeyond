@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
 import styles from "./Map.module.css";
+const apiKey = import.meta.env.VITE_API_KEY;
+console.log(apiKey)
 
-function Map() {
-  const [location, setLocation] = useState([]);
+function Map(props) {
+  const [location, setLocation] = useState({
+    latitude: 0,
+    longitude: 0,
+  });
   const [description, setDescription] = useState([]);
+  const [cityAndState, setCityAndState] = useState("");
 
   function calculateCircleRadius(zoom) {
     // Adjust the calculation based on your desired behavior
@@ -12,16 +18,24 @@ function Map() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/location")
+    fetch(`http://localhost:4000/api/location/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
-        setLocation(data);
+        setLocation({latitude: data.latitude, longitude: data.longitude});
+        fetch(
+          `https://geocode.maps.co/reverse?lat=${data.latitude}&lon=${data.longitude}`
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            const city = data.address.city
+            const state = data.address.state
+            console.log(city, state)
+            setCityAndState(`${city}, ${state}`)
+          });
         const loader = new Loader({
-          apiKey: "AIzaSyB1NYoGWbuFCIhTHipFCVItMVUoYg27ncM",
+          apiKey: apiKey,
           version: "weekly",
-          // ...additionalOptions
         });
-
         loader.load().then(() => {
           const google = window.google;
           var styles = [
@@ -54,10 +68,15 @@ function Map() {
               stylers: [{ visibility: "off" }],
             },
           ];
+
+          const location = data;
           const map = new google.maps.Map(
             document.getElementById("map-container"),
             {
-              center: { lat: 48.230164, lng: -101.291199 },
+              center: {
+                lat: Number(data.latitude),
+                lng: Number(data.longitude),
+              },
               zoom: 13,
               styles: styles,
               gestureHandling: "greedy", // Disable Ctrl + scroll zoom
@@ -121,29 +140,27 @@ function Map() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/location/description")
+    fetch(`http://localhost:4000/api/location/description/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
         setDescription(data.description);
-        console.log(description);
-      });
+      })
+      
   }, []);
 
   function showMore() {
     console.log("show more func");
   }
 
+  console.log(cityAndState)
+
   return (
     <>
       <div id="locationInfo" className={styles["locationInfo"]}>
         <h2>Where you'll be</h2>
         <div id="map-container" className={styles["map-container"]}></div>
-        <h3>Minot, North Dakota</h3>
-        <p>
-          {description}
-          {/* Located less than 10 minutes from downtown Burlington and less than 20
-          minutes from Minot Air Force Base, North Dakota. */}
-        </p>
+        <h3>{cityAndState}</h3>
+        <p>{description}</p>
         <span onClick={showMore}>Show more </span>
       </div>
     </>

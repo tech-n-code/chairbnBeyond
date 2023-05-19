@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Reviews.module.css";
 
-export default function Reviews() {
+export default function Reviews(props) {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await fetch("http://localhost:3005/api/reviews");
+        const response = await fetch(
+          `http://localhost:3005/api/reviews/${props.listingId}`
+        );
         const data = await response.json();
         setReviews(data);
         // console.log("fetched reviews:", data);
