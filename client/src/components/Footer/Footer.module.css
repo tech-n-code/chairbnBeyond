@@ -1,7 +1,7 @@
 .footer {
     display: flex;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 48px;
     padding-bottom: 48px;
     border-top: 1px solid lightgray;
