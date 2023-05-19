@@ -1,13 +1,18 @@
-.mainContainer{
+.mainContainer {
   display: flex;
+  flex-direction: row;
+  min-height: 620px;
+  border-top: 1px solid rgb(212, 212, 212); /* Add top border */
+  border-bottom: 1px solid rgb(212, 212, 212); /* Add bottom border */
+  margin: 100px 0; /* Add margin for gap */
 }
 
 .userContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  min-width: 400px;
+  flex: 1;
+  justify-content: space-evenly;
+  margin: 100px 0;
 }
 
 .userHeader {
@@ -18,6 +23,8 @@
 .userPicture {
   max-height: 64px;
   max-width: 64px;
+  border-radius: 40px;
+  padding-top: 5px;
 }
 
 .userHeader h2 {
@@ -25,44 +32,40 @@
   margin-bottom: 0.25rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 22px;
+  font-size: 22px; /* Increased font size */
   font-weight: 620;
 }
 
 .userHeader p {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin: 0.25rem 0;
   color: #888;
+  font-size: 14px; /* Increased font size */
 }
 
 .numbReviews {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  align-items: flex-start;
+  justify-content: space-between; /* Adjusted justification */
+  align-items: center; /* Adjusted alignment */
 }
 
 .numbReviews h3 {
-  margin: 0;
+  margin: 5px;
   display: flex;
   align-items: center;
   font-weight: 300;
   white-space: nowrap;
-}
-
-.numbReviews h3:nth-child(2) {
-  flex: 1;
+  font-size: 16px; /* Increased font size */
 }
 
 .checkIconText {
   margin-left: 0.5rem;
-
 }
 
 .superHost h3 {
   margin: 0;
   font-weight: bold;
   text-align: left;
+  font-size: 18px; /* Increased font size */
 }
 
 .aboutHost {
@@ -80,12 +83,10 @@
 
 .superHostDesc {
   text-align: left;
-  word-wrap:normal;
+  word-wrap: normal;
   max-width: 300px;
-}
-
-p {
-  margin: 0;
+  font-size: 16px; /* Increased font size */
+  font-weight: 100;
 }
 
 .starIcon {
@@ -94,48 +95,40 @@ p {
 }
 
 .medalIcon {
-  font-size: 1rem; /* Adjust the size as needed */
-  margin-right: 0.5rem; /* Add space to the right of the icon */
+  font-size: 1.2rem; /* Increased font size */
+  margin-right: 0.5rem;
 }
 
-.checkIcon{
-  font-size: 1rem;
+.checkIcon {
+  font-size: 1.2rem; /* Increased font size */
 }
 
 .contactButton {
   background-color: white;
   border: 1.5px solid black;
   border-radius: 5px;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem; /* Increased padding */
   color: black;
-  font-size: 16px;
+  font-size: 20px; /* Increased font size */
   font-weight: bold;
   cursor: pointer;
-  width: 150px;
-  height: 48px;
+  width: 180px; /* Increased width */
+  height: 60px; /* Increased height */
 }
 
 .contactSection {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   width: 100%;
-  flex-direction: column;
+  flex-direction: column; /* Changed direction to column */
+  gap: 10px; /* Increased gap */
+  text-align: center; /* Added text alignment */
 }
-
-.contactInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.contactButton {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 4px;
-  color: black;
-  padding: 8px 16px;
-}
-.userPicture{
-  border-radius: 40px;
+.contactSection span {
+  font-weight: 200;
+  font-size: 14px;
+  white-space: normal;
+  word-break: break-word;
+  padding-top: 50px;
 }
