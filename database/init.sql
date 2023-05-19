@@ -32,7 +32,7 @@ CREATE TABLE locations(
     id serial PRIMARY KEY,
     latitude float NOT NULL,
     longitude float NOT NULL,
-    city text NOT NULL,
+    city text NOT NULL
 );
 
 CREATE TABLE listings (
@@ -102,10 +102,10 @@ CREATE TABLE listing_amenities(
     FOREIGN KEY (amenityId) REFERENCES amenities(id)
 );
 
-INSERT INTO locations (latitude, longitude) VALUES (48.230164, -101.291199, 'Minot');
-INSERT INTO locations (latitude, longitude) VALUES (40.7128, -74.0060, 'New York');
-INSERT INTO locations (latitude, longitude) VALUES (51.5074, -0.1278, 'London');
-INSERT INTO locations (latitude, longitude) VALUES (35.6895, 139.6917, 'Tokyo');
+INSERT INTO locations (latitude, longitude, city) VALUES (48.230164, -101.291199, 'Minot');
+INSERT INTO locations (latitude, longitude, city) VALUES (40.7128, -74.0060, 'New York');
+INSERT INTO locations (latitude, longitude, city) VALUES (51.5074, -0.1278, 'London');
+INSERT INTO locations (latitude, longitude, city) VALUES (35.6895, 139.6917, 'Tokyo');
 
 
 INSERT INTO amenity_types (amenity_type) VALUES ('Not Included');
