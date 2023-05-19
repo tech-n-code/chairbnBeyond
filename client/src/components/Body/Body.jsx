@@ -13,13 +13,11 @@ import Reviews from "./Reviews/Reviews";
 import Map from "./Map/Map";
 import ThingsToKnow from "./ThingsToKnow/ThingsToKnow";
 
-
-
 function Body(props) {
   return (
     <>
       <div className={styles["body-container"]}>
-        <TitleBar listingId={props.listingId}/>
+        <TitleBar listingId={props.listingId} />
         <Gallery />
         <div className={styles["body-after-gallery-container"]}>
           <div className={styles["body-left-column-container"]}>
@@ -31,11 +29,14 @@ function Body(props) {
             <div className="calendar">Calendar Component</div>
           </div>
           <div className={styles["body-right-column-container"]}>
-            <Reservation listingId={props.listingId} className={styles["reservation"]} />
+            <Reservation
+              listingId={props.listingId}
+              className={styles["reservation"]}
+            />
           </div>
         </div>
-        <Reviews />
-        <Map listingId={props.listingId}/>
+        <Reviews listingId={props.listingId} />
+        <Map listingId={props.listingId} />
         <ThingsToKnow className="things" />
       </div>
     </>
