@@ -33,16 +33,7 @@ function Guests() {
       <button
         className={styles["guest-dropdown-header"]}
         onClick={toggleDropdown}
-      >
-
-        {/* <div className={styles["GACI"]}>
-          <span>GUESTS</span>
-          <span>
-            Adults: {guests.adults} Children: {guests.children} Infants:{" "}
-            {guests.infants}
-          </span>
-        </div> */}
-        
+      > 
         <div className={styles["GACI"]}>
   <span>GUESTS</span>
   <span>
@@ -93,7 +84,6 @@ function Guests() {
               <button onClick={() => incrementGuests("infants")}>+</button>
             </div>
           </div>
-
           <div className={styles["guest-count"]}>
             <div className={styles["guest-class"]}>
               <h4>Pets</h4>
@@ -104,8 +94,6 @@ function Guests() {
               <button onClick={() => incrementGuests("pets")}>+</button>
             </div>
           </div>
-
-
         </div>
       )}
     </div>
