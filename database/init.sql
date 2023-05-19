@@ -306,6 +306,8 @@ INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communicatio
 INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 4, 'This Minot Chairbnb should come with a warning: you will be smiling so much your face might get stuck in a permanent grin. Best risk I have ever taken!', 5, 5, 5, 5, 5, 5,5, 4);
 INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 5, 'Who needs a theme park when you have this Chairbnb in Minot? The rollercoaster ride of comfort and laughter was simply unbeatable!', 5, 5, 5, 5, 5, 5,5, 5);
 INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (1, 6, 'This should come with a warning sign: "Caution! Excessive comfort and delightful hospitality may cause severe addiction to the charm of North Dakota." Proceed at your own risk!', 5, 5, 5, 5, 5, 5,5, 6);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (2, 1, 'Review #1', 2, 5, 5, 5, 5, 5,5, 6);
+INSERT INTO reviews(listingId, userId, review, rating, cleanliness, communication, checkin, accuracy, location, value,bookingId) VALUES (2, 2, 'Review #2', 1, 5, 5, 5, 5, 5,5, 6);
 
 INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://na.rdcpix.com/625946635/a545dc497c1d4e1385851ca5e12f5a14w-c0rd-w832_h468_r4_q80.jpg');
 INSERT INTO listing_photos (listingId, photo_url) VALUES (1, 'https://cdn.abcotvs.com/dip/images/895569_073115-cc-Breaking-Bad-Jesse-3.jpg');
