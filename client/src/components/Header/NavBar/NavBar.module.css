@@ -3,7 +3,6 @@
 }
 
 .NavBar {
-    /* border: 5px solid black; */
     display: flex;
     justify-content: space-between;
     margin-left: 40px;
@@ -12,9 +11,6 @@
     margin-bottom: 20px;
 }
 
-/* .logo {
-    border: 3px solid red;
-} */
 .logo {
     display: flex;
     align-items: center;
@@ -31,10 +27,6 @@
     font-size: 24px;
     color: #ff385c;
 }
-
-/* .searchButtonContainer {
-    border: 3px solid blue;
-} */
 
 .searchBarButton {
     background: transparent;
@@ -72,13 +64,12 @@
 
 .magnifyingGlass {
     display: block;
-    width: 55%;
+    width: 12px;
     height: auto;
     object-fit: cover;
 }
 
 .AyhPlusGlobeContainer {
-    /* border: 3px solid green; */
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif;
     color: #222222;
@@ -97,7 +88,6 @@
 }
 
 .userContainer {
-    /* border: 3px solid yellow; */
     display: flex;
 }
 
@@ -124,3 +114,4 @@
     width: 25px;
     padding-left: 10px;
 }
+

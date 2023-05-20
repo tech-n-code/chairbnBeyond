@@ -408,7 +408,7 @@ export default function Calendar() {
         </div>
       </div>
       <div className={styles["bottom-section"]}>
-        <img src="../../../../src/assets/keyboard.png" alt="keyboard" />
+        <img className={styles["keyboard"]} src="../../../../src/assets/keyboard.png" alt="keyboard" />
         <div className={styles["clear-dates"]}>Clear dates</div>
       </div>
     </div>
