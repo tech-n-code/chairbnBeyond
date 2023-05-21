@@ -22,7 +22,7 @@ function Body(props) {
         <Gallery listingId={props.listingId} />
         <div className={styles["body-after-gallery-container"]}>
           <div className={styles["body-left-column-container"]}>
-            <PropertyOverview />
+            <PropertyOverview listingId={props.listingId} />
             <ChairCover />
             <HostInfo listingId={props.listingId}/>
             <AboutThisPlace />

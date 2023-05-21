@@ -1,22 +1,33 @@
 import styles from "./PropertyOverview.module.css";
 import React, { useEffect, useState } from "react";
 
-function PropertyOverview() {
-  const [hostPhoto, setHostPhoto] = useState([]);
+function PropertyOverview(props) {
+  const [name, setName] = useState([]);
+  console.log(props.listingId)
+  // const [hostPhoto, setHostPhoto] = useState([]);
+  // useEffect(() => {
+  //   fetch(`http://localhost:4001/api/hosts/photo/${props.listingId}`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setHostPhoto(data.photo_url);
+  //     });
+  // }, []);
   useEffect(() => {
-    fetch(`http://localhost:4001/api/hosts/photo/1`)
+    fetch(`http://localhost:4001/api/users/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
-        setHostPhoto(data.photo_url);
+        console.log(data)
+        setName(data.fname);
       });
   }, []);
+
   return (
     <>
       <div className={styles.propertyOverview}>
         <div>
           <span className={styles.hostedBy}>
-            Room in a townhouse hosted by Christi-Anna
-          <img src={hostPhoto} className={styles.userPicture} />
+            Room in a townhouse hosted by {name}
+          {/* <img src={hostPhoto} className={styles.userPicture} /> */}
           </span>
           <div className={styles.infoContainer}>
             <span className={`${styles.chairInfo} ${styles.bedimg}`}>double bed</span>
