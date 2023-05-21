@@ -78,6 +78,6 @@ app.get("/api/gallery", (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}...`);
+    console.log(`Gallery server is listening on port ${PORT}...`);
   });
   

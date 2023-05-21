@@ -44,5 +44,5 @@ app.get("/api/reviews/:id", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("Server is listening on port 3005...");
+  console.log("Reviews server is listening on port 3005...");
 });

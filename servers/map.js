@@ -40,5 +40,5 @@ app.get("/api/location/description/:id", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+  console.log(`Map server is listening on port ${PORT}`);
 });
