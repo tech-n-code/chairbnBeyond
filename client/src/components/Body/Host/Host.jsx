@@ -81,8 +81,18 @@ function HostInfo(props) {
           </div>
         </div>
         <div className={styles.contactSection}>
-          <p>Response rate: 100%</p>
-          <p>Response time: within an hour</p>
+          <p>
+            Response rate:{" "}
+            {props.listingId % 2 !== 0
+              ? "100%"
+              : `${Math.floor(Math.random() * 51) + 50}%`}
+          </p>
+
+          <p>
+            Response time:{" "}
+            {props.listingId % 2 !== 0 ? "within an hour" : "within 2 hours"}
+          </p>
+
           <button className={styles.contactButton}>Contact Host</button>
           <span>
             To protect your payment, never transfer money or communicate outside
