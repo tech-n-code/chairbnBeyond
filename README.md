@@ -36,7 +36,7 @@
 - ChairBnB Wireframe: [Chairbnb Wireframe on Excalidraw](https://excalidraw.com/#room=e159a4a7216e9c77cc9c,YvhSpCdhIfyighAJuDY2IA)
 - Completed project here : [Coming Soon]
 
-## Instalation & Setup
+## Installation & Setup
 
 - Fork/Clone down this repo: [ChairBnB](https://github.com/CombatCoders/chairbnb.git)
 - cd into the project folder
