@@ -1,4 +1,3 @@
-
 .chaircover {
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +7,6 @@
     margin: 0;
     width: 100%;
     max-width: 1280px;
-    padding: 10px;
     color: #222222;
   }
   
