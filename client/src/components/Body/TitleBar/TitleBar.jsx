@@ -48,7 +48,7 @@ function TitleBar(props) {
                 <a
                 //   href="nothingyet"
                 >
-                  Minot, North Dakota, USA
+                  {titleData[0].city}
                 </a>
               </div>
             </div>

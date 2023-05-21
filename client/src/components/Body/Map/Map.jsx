@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
 import styles from "./Map.module.css";
 const apiKey = import.meta.env.VITE_API_KEY;
-console.log(apiKey);
 
 function Map(props) {
   const [location, setLocation] = useState({
