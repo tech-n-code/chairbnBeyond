@@ -7,5 +7,5 @@ app.get("/api/test", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("Server is listening on port 3001...");
+  console.log("Hello World server is listening on port 3001...");
 });

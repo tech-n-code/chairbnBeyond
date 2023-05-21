@@ -58,5 +58,5 @@ app.get("/api/amenities/ten/:id", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(` Amenities Server is listening on port ${PORT}...`);
+  console.log(`Amenities Server is listening on port ${PORT}...`);
 });

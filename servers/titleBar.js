@@ -33,5 +33,5 @@ app.get("/api/title/:id", (req, res) => {
 
 //start the server
 app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}...`);
+  console.log(`Titlebar server is listening on port ${PORT}...`);
 });

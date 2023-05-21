@@ -78,5 +78,5 @@ app.get("/api/hosts/photo/:id", (req, res) => {
 // });
 
 app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+  console.log(`Host server is listening on port ${PORT}`);
 });

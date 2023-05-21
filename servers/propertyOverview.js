@@ -53,4 +53,4 @@ app.get("/api/overview//:id", (req, res) => {
   });
 
 
-app.listen(PORT, () => console.log(`app listening on port: ${PORT}`));
+app.listen(PORT, () => console.log(`property overview server listening on port: ${PORT}`));
