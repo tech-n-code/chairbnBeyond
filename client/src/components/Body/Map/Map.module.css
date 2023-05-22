@@ -1,0 +1,45 @@
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 80px; */
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+}
+
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  height: 480px;
+  text-align: left;
+  cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur);
+}
+
+.locationInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.locationInfo h2,
+.locationInfo h3,
+.locationInfo p,
+.locationInfo span {
+  font-size: large;
+  font-weight: light;
+}
+
+.locationInfo span {
+  font-weight: bold;
+  font-size: larger;
+  text-decoration-line: underline;
+  cursor: pointer;
+}

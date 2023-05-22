@@ -1,0 +1,49 @@
+.body-container {
+  color: rgb(34, 34, 34);
+  /* display: block; */
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  position: relative;
+}
+
+.body-after-gallery-container {
+  padding: 20px 80px;
+  display: flex;
+}
+
+.body-left-column-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 60%;
+  padding: 10px;
+}
+
+.body-right-column-container {
+  box-sizing: border-box;
+  color: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-break: strict;
+  line-height: 20px;
+  margin-left: 20px;
+  margin-right: 0px;
+  width: 40%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}

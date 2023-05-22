@@ -1,0 +1,134 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  min-height: 620px;
+  border-top: 1px solid rgb(212, 212, 212); /* Add top border */
+  border-bottom: 1px solid rgb(212, 212, 212); /* Add bottom border */
+  margin: 100px 0; /* Add margin for gap */
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-evenly;
+  margin: 100px 0;
+}
+
+.userHeader {
+  display: flex;
+  align-items: flex-start;
+}
+
+.userPicture {
+  max-height: 64px;
+  max-width: 64px;
+  border-radius: 40px;
+  padding-top: 5px;
+}
+
+.userHeader h2 {
+  margin-left: 1rem;
+  margin-bottom: 0.25rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px; /* Increased font size */
+  font-weight: 620;
+}
+
+.userHeader p {
+  margin: 0.25rem 0;
+  color: #888;
+  font-size: 14px; /* Increased font size */
+}
+
+.numbReviews {
+  display: flex;
+  justify-content: space-between; /* Adjusted justification */
+  align-items: center; /* Adjusted alignment */
+}
+
+.numbReviews h3 {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  white-space: nowrap;
+  font-size: 16px; /* Increased font size */
+}
+
+.checkIconText {
+  margin-left: 0.5rem;
+}
+
+.superHost h3 {
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+  font-size: 18px; /* Increased font size */
+}
+
+.aboutHost {
+  align-self: flex-start;
+}
+
+.superHost p {
+  margin: 0;
+}
+
+.superHost {
+  display: flex;
+  flex-direction: column;
+}
+
+.superHostDesc {
+  text-align: left;
+  word-wrap: normal;
+  max-width: 300px;
+  font-size: 16px; /* Increased font size */
+  font-weight: 100;
+}
+
+.starIcon {
+  color: black;
+  margin-right: 0.5rem;
+}
+
+.medalIcon {
+  font-size: 1.2rem; /* Increased font size */
+  margin-right: 0.5rem;
+}
+
+.checkIcon {
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.contactButton {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem; /* Increased padding */
+  color: black;
+  font-size: 20px; /* Increased font size */
+  font-weight: bold;
+  cursor: pointer;
+  width: 180px; /* Increased width */
+  height: 60px; /* Increased height */
+}
+
+.contactSection {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  flex-direction: column; /* Changed direction to column */
+  gap: 10px; /* Increased gap */
+  text-align: center; /* Added text alignment */
+}
+.contactSection span {
+  font-weight: 200;
+  font-size: 14px;
+  white-space: normal;
+  word-break: break-word;
+  padding-top: 50px;
+}

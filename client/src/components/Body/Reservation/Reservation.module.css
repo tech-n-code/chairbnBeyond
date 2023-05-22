@@ -1,0 +1,141 @@
+.reservation {
+    position: sticky;
+    top: 20px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    font-family: sans-serif;
+    /* width: 318px; */
+  }
+
+.reservationTitle {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.reviews {
+    cursor: pointer;
+}
+
+.reservationDetails {
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.checkIn {
+    padding: 15px;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.checkOut {
+    padding: 15px;
+    width: 50%;
+    background-color: transparent;
+    border-left: 1px solid gray;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* .guests {
+    padding: 15px;
+    background-color: transparent;
+    border-top: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+} */
+
+.reserveButton {
+    padding: 10px;
+    text-align: center;
+}
+
+.reserve {
+    padding: 15px;
+    width: 100%;
+    background-color: #ff385c;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
+
+.roomFee {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cleaningFee {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.serviceFee {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.totalFee {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.costBreakdown {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+u {
+    cursor: pointer;
+}
+
+.extraInfo {
+    display: flex;
+    font-size: 13px;
+}
+
+.infoElement {
+    padding-left: 4px;
+}
+
+.starIcon {
+    font-size: 18px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 22px;
+}

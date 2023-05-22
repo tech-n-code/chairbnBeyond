@@ -1,0 +1,46 @@
+###Test
+GET http://localhost:3001/api/test
+
+###Get Title information
+Get http://localhost:3050/api/title/1
+
+###Get all amenities
+GET http://localhost:3002/api/amenities
+
+###Get Amenities for a specific listing
+GET http://localhost:3002/api/amenities/1
+
+
+###Get location
+GET http://localhost:4000/api/location/1
+
+###Get location
+GET http://localhost:4000/api/location/description/1
+
+###Get a description for one property
+GET http://localhost:3050/api/about/2
+
+
+###Get images to display in gallery
+GET http://localhost:3010/api/gallery
+
+
+###Get users first and last name 
+GET http://localhost:4001/api/users/2
+
+###Get host info
+GET http://localhost:4001/api/hosts/about/2
+
+###Get host photo
+GET http://localhost:4001/api/hosts/photo/2
+
+###Get reviews
+GET http://localhost:3005/api/reviews
+
+###Get gallery
+GET http://localhost:3010/api/gallery
+
+###Get gallery photo urls only
+GET http://localhost:3010/api/gallery/photo_url/1
+
+

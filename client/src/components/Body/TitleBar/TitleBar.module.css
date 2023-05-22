@@ -1,0 +1,51 @@
+.titlebar {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+    padding: 30px;
+}
+
+.titleContainer {
+    display: flex;
+}
+
+.titleContainer img{
+    width: 25px;
+    height: 25px;
+}
+
+.actualTitle {
+    font-size: 28px;
+    font-weight: 500;
+    color: #222222;
+    padding-left: 15px;
+}
+
+.extraInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.extraInfoLeft {
+    margin-top: 8px;
+    display: flex;
+}
+
+.extraInfoRight {
+display: flex;
+}
+
+.starIcon {
+font-size: 22px;
+}
+
+.infoElement {
+    padding: 3px;
+    font-size: 14px;
+}
+
+.upload {
+    padding-top: 2px;
+    height: 15px;
+    width: 15px;
+    padding-right: 3px;
+}

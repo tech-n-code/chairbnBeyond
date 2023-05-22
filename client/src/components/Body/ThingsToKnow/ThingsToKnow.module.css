@@ -1,0 +1,82 @@
+.component-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  border-top: 1px solid lightgray;
+}
+
+.component-title {
+  color: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.thingsToKnowContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.component-heading {
+  color: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.subsection-container {
+  color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 30%;
+}
+
+.subtitle-container {
+  color: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.component-subtitle {
+  color: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.list-item-container {
+  color: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.list-item {
+  color: rgb(34, 34, 34);
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.show-more-container {
+  font-family: Circular, -apple-system, "system-ui", Roboto, "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}

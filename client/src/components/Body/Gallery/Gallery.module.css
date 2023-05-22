@@ -1,0 +1,51 @@
+.img-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    width: 29.5%;
+  }
+  
+  .gallery-item {
+    width: 100%;
+    /* height: 29.5%; */
+    padding-bottom: 93%; 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  .item1 {
+      object-fit: cover;
+      padding-right: 8px;
+      width: 29.5%;
+  }
+  
+  .item1 img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+  }
+  
+  .img3 {
+    border-top-right-radius: 15px;
+  }
+  
+  .img5 {
+    border-bottom-right-radius: 15px;
+  }

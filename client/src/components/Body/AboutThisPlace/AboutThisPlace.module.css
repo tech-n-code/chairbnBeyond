@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  align-items: flex-start;
+  margin: 0;
+  width: 100%;
+  max-width: 1280px;
+  color: #222222;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.aboutTitle {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 22px;
+  padding-bottom: 0%;
+  margin: 0%;
+  padding-bottom: 16px;
+}
+
+.aboutShowMore {
+  margin-top: 16px;
+}
