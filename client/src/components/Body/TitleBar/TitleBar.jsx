@@ -10,7 +10,7 @@ function TitleBar(props) {
         `/api/title/${props.listingId}` //3050
       );
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setTitleData(data);
     } catch (error) {
       console.log(error);

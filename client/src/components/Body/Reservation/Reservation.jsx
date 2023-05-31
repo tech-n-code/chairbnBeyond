@@ -11,7 +11,7 @@ function Reservation(props) {
         `/api/title/${props.listingId}`
       );
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setTitleData(data);
     } catch (error) {
       console.log(error);

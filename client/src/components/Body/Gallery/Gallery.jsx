@@ -9,7 +9,7 @@ function Gallery(props) {
       .then((res) => res.json())
       .then((data) => {
         setGallery(data);
-        console.log(gallery);
+        // console.log(gallery);
       })
       .catch((err) => {
         console.error("Error fetching gallery: ", err);
@@ -17,7 +17,7 @@ function Gallery(props) {
   }, []);
 
   useEffect(() => {
-    console.log(gallery);
+    // console.log(gallery);
   }, [gallery]);
 
 

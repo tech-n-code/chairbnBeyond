@@ -21,7 +21,7 @@ function Amenities(props) {
       .then((res) => res.json())
       .then((data) => {
         setAmenities(data);
-        console.log(amenities);
+        // console.log(amenities);
       })
       .catch((err) => {
         console.error("Error fetching amenities: ", err);
@@ -31,7 +31,7 @@ function Amenities(props) {
           `/api/amenities/ten/${props.listingId}`
         ).then((res) => res.json().then((data) => {
           setTenAmenities(data);
-          console.log(tenAmenities);
+          // console.log(tenAmenities);
         }))
       );
   }, []);

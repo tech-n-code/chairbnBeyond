@@ -28,7 +28,7 @@ function Map(props) {
           .then((data) => {
             const city = data.address.city;
             const state = data.address.state;
-            console.log(city, state);
+            // console.log(city, state);
             setCityAndState(`${city}, ${state}`);
           });
         const loader = new Loader({
@@ -147,7 +147,7 @@ function Map(props) {
   }, []);
 
   function showMore() {
-    console.log("show more func");
+    // console.log("show more func");
   }
 
   return (
