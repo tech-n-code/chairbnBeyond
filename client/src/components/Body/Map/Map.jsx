@@ -17,7 +17,7 @@ function Map(props) {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/location/${props.listingId}`)
+    fetch(`/api/location/${props.listingId}`) //4000
       .then((res) => res.json())
       .then((data) => {
         setLocation({ latitude: data.latitude, longitude: data.longitude });
@@ -139,7 +139,7 @@ function Map(props) {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/location/description/${props.listingId}`)
+    fetch(`/api/location/description/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
         setDescription(data.description);
