@@ -17,21 +17,21 @@ function Amenities(props) {
     setIsModalOpen(false);
   };
   useEffect(() => {
-    fetch(`http://localhost:3002/api/amenities/${props.listingId}`)
+    fetch(`/api/amenities/${props.listingId}`) //3002
       .then((res) => res.json())
       .then((data) => {
         setAmenities(data);
-        console.log(amenities);
+        // console.log(amenities);
       })
       .catch((err) => {
         console.error("Error fetching amenities: ", err);
       })
       .then(
         fetch(
-          `http://localhost:3002/api/amenities/ten/${props.listingId}`
+          `/api/amenities/ten/${props.listingId}`
         ).then((res) => res.json().then((data) => {
           setTenAmenities(data);
-          console.log(tenAmenities);
+          // console.log(tenAmenities);
         }))
       );
   }, []);
