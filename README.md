@@ -50,7 +50,7 @@ The last phase of testing against the Nginx load balancer revealed promising res
 
 #### Recommendation ([Back to Top](#contents))
 
-Based on the results above, I encouraged the client to consider scaling horizontally to at least one more server. The ‘new normal’ with one load balancer between two low- power servers increased to 700 VUs (133% improvement), with a throughput of 1050 RPS (63% improvement), at the same baseline latency of 200ms and zero req. errors.
+Based on the results above, I encouraged the client to consider scaling horizontally to at least one more server. The ‘new normal’ with one load balancer between two low-power servers increased to 700 VUs (133% improvement), with a throughput of 1050 RPS (63% improvement), at the same baseline latency of 200ms and zero req. errors.
 
 Read the full report here...
 
