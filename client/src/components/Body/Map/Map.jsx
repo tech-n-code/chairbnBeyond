@@ -17,7 +17,7 @@ function Map(props) {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/location/${props.listingId}`)
+    fetch(`/api/location/${props.listingId}`) //4000
       .then((res) => res.json())
       .then((data) => {
         setLocation({ latitude: data.latitude, longitude: data.longitude });
@@ -28,7 +28,7 @@ function Map(props) {
           .then((data) => {
             const city = data.address.city;
             const state = data.address.state;
-            console.log(city, state);
+            // console.log(city, state);
             setCityAndState(`${city}, ${state}`);
           });
         const loader = new Loader({
@@ -139,7 +139,7 @@ function Map(props) {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/location/description/${props.listingId}`)
+    fetch(`/api/location/description/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
         setDescription(data.description);
@@ -147,7 +147,7 @@ function Map(props) {
   }, []);
 
   function showMore() {
-    console.log("show more func");
+    // console.log("show more func");
   }
 
   return (

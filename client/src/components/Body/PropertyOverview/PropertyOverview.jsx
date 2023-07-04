@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 function PropertyOverview(props) {
   const [name, setName] = useState([]);
-  console.log(props.listingId)
+  // console.log(props.listingId)
   // const [hostPhoto, setHostPhoto] = useState([]);
   // useEffect(() => {
   //   fetch(`http://localhost:4001/api/hosts/photo/${props.listingId}`)
@@ -13,10 +13,10 @@ function PropertyOverview(props) {
   //     });
   // }, []);
   useEffect(() => {
-    fetch(`http://localhost:4001/api/users/${props.listingId}`)
+    fetch(`/api/users/${props.listingId}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         setName(data.fname);
       });
   }, []);

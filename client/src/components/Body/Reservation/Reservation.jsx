@@ -8,10 +8,10 @@ function Reservation(props) {
   const fetchTitleData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3050/api/title/${props.listingId}`
+        `/api/title/${props.listingId}`
       );
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setTitleData(data);
     } catch (error) {
       console.log(error);
