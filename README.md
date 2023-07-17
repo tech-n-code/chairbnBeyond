@@ -9,7 +9,7 @@
   - [Recommendation](#recommendation)
 * [Technologies](#technologies)
 
-## Requirements ([Back to Top](#contents))
+## Requirements <span id="requirements"></span> ([Back to Top](#contents))
 
 - Gather metrics about the current performance of the application
 - Research and experiment with methods of optimizing and scaling the application
@@ -24,7 +24,7 @@ Final testing architecture:
 
 ![Final Testing Diagram](API-optimization/SDC_final_testing_diagram.png)
 
-## Results ([Back to Top](#contents))
+## Results <span id="results"></span> ([Back to Top](#contents))
 
 ### I set out to answer the following questions for the client:
 
@@ -32,7 +32,7 @@ Final testing architecture:
 1. What are some ways key metrics such as latency, throughput, and availability, can
 be improved?
 
-### Methodology: ([Back to Top](#contents))
+### Methodology: <span id="methodology"></span> ([Back to Top](#contents))
 
 The methodology for the tests was relatively simple; gather baseline metrics on Server 1 and Server 2 independent from each other, then deploy the Nginx load balancer and test again, analyze the results, and provide recommendations.
 
@@ -48,7 +48,7 @@ The last phase of testing against the Nginx load balancer revealed promising res
 
 ![Nginx Latency Test](API-optimization/Nginx_latency_test.png)
 
-#### Recommendation ([Back to Top](#contents))
+#### Recommendation <span id="recommendation"></span> ([Back to Top](#contents))
 
 Based on the results above, I encouraged the client to consider scaling horizontally to at least one more server. The ‘new normal’ with one load balancer between two low-power servers increased to 700 VUs (133% improvement), with a throughput of 1050 RPS (63% improvement), at the same baseline latency of 200ms and zero req. errors.
 
@@ -60,7 +60,7 @@ Watch the capstone video here...
 
 [![Project Video](API-optimization/SDC_video_thumbnail.png)](https://youtu.be/AbH6sg5cFWI)
 
-## Technologies ([Back to Top](#contents))
+## Technologies <span id="technologies"></span> ([Back to Top](#contents))
 
 [![Nginx](https://img.shields.io/badge/-Nginx-009639?style=flat&logo=nginx&logoColor=black)](https://nginx.org/)
 [![K6](https://img.shields.io/badge/-k6-7D64FF?style=flat&logo=nginx&logoColor=white)](https://k6.io/)
