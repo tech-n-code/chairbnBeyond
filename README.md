@@ -58,7 +58,7 @@ Read the full report here...
 
 Watch the capstone video here...
 
-[![Project Video](API-optimization/SDC_video_thumbnail.png)](API-optimization/SDC-video_Will-Franceschini.mp4)
+[![Project Video](API-optimization/SDC_video_thumbnail.png)](https://youtu.be/AbH6sg5cFWI)
 
 ## Technologies ([Back to Top](#contents))
 
